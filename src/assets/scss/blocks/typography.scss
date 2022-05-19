@@ -1,0 +1,40 @@
+.title-h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: #2c3136;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+.text-1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+}
+
+.link-underline {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-decoration: underline;
+
+    &:hover {
+        color: #0071c2;
+    }
+
+    @include breakpoint($tablet-bp) {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}

@@ -1,0 +1,44 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    &:hover {
+        color: #000;
+    }
+}
+
+body {
+    background-color: #fcfcfc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #000;
+
+    &.no-scroll,
+    &.show-sidebar {
+        overflow: hidden;
+    }
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Blocks */
+@import "blocks/btn";
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/typography";
+@import "blocks/intro";
+@import "blocks/services";
+@import "blocks/advantages";
