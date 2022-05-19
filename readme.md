@@ -1,4 +1,4 @@
-# Visit Sochi UI #
+# UniqtripSoft-ui UI #
 
 <p>
 Запуск проекта для разработки: <b>gulp </b><br />
