@@ -1,0 +1,130 @@
+.package {
+    padding: 40px 0 90px;
+}
+
+.package__inner {
+    display: flex;
+    margin: 0 -10px;
+    margin-bottom: 24px;
+}
+
+.package__item {
+    padding: 0 10px;
+    width: 33.33333%;
+}
+
+.package__card {
+    padding: 50px 30px 60px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+
+    &--green {
+        background: #1ea06c;
+
+        & .package__title,
+        .package__price,
+        .package__text,
+        .package__link {
+            color: #fff;
+        }
+
+        & .package__btn {
+            background: #fff;
+            color: #2b2e3f;
+        }
+
+        & .package__text::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin: 30px auto;
+            background: #fff;
+        }
+    }
+}
+
+.package__title {
+    margin-bottom: 22px;
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: #2C3136;
+}
+
+.package__price {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1ea06c;
+}
+
+.package__value {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.package__month {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.package__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3c3c3c;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin: 30px auto;
+        background: #4f4f4f;
+    }
+}
+
+.package__link {
+    display: block;
+    margin-bottom: 44px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #3c3c3c;
+    text-decoration: none;
+
+    transition: all .2s linear;
+
+    &:hover {
+
+    }
+}
+
+.package__btn {
+    display: block;
+    height: 54px;
+    padding: 12px 8px;
+
+    background: #1ea06c;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.package__note {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #787878;
+}

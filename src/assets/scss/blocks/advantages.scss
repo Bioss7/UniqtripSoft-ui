@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 65px 0 50px;
 
     @include breakpoint($bp-991) {
         padding: 0;

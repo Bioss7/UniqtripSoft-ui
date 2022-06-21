@@ -1,12 +1,61 @@
 .form {
-    background: #f5f5f6;
-
+    
     &--feedback {
-        // padding: 48px 60px 63px 64px;
         padding: 50px 40px 63px 40px;
+        background: #f5f5f6;
+
+        & .form__group {
+            padding: 0 7.5px;
+        }
 
         @include breakpoint($bp-575) {
             padding: 28px 16px 30px;
+        }
+
+        & .form__inner {
+            margin: 0 -7.5px;
+
+
+            & .form__group { 
+            margin-bottom: 0;
+
+                .btn {
+                    height: 50px;
+                }
+            }
+
+            @include breakpoint($bp-575) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &--package {
+        padding: 53px 139px 53px;
+        background: linear-gradient(133.93deg, #fda05d 15.61%, #febb02 85.11%), #ffd151;
+
+        & .form__inner {
+            margin: 0 -20px;
+
+            & .form__group { 
+                padding: 0 20px;
+                margin-bottom: 30px;
+                width: 50%;
+
+                & label {
+                    margin-bottom: 12px;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+
+                &:last-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        & .form__group {
+            margin-bottom: 30px;
         }
     }
 }
@@ -31,59 +80,58 @@
         margin-bottom: 0;
     }
 
+    &--feedback-input {
+        width: 60%;
+    }
+
+    &--feedback-btn {
+        width: 40%;
+    }
+
+    &--note {
+        margin-bottom: 10px !important;
+    }
+
+    &--btn {
+       display: block;
+    }
+
     @include breakpoint($bp-575) {
         margin-bottom: 20px;
+    }
+    
+    @include breakpoint(1120px) {
+        &--feedback-input {
+            width: 50%;
+        }
+    
+        &--feedback-btn {
+            width: 50%;
+        }
+    }
+
+    @include breakpoint($bp-575) {
+        &--feedback-input {
+            width: 100%;
+        }
+    
+        &--feedback-btn {
+            width: 100%;
+
+            & .btn {
+                width: 100%;
+            }
+        }
     }
 }
 
 .form__inner {
     display: flex;
-
-    &--feedback {
-        & .form__control {
-            margin-right: 15px;
-            width: 51%;
-        }
-
-        .btn {
-            height: 50px;
-            width: 45%;
-            display: flex;
-            justify-content: center;
-        }
-
-        @include breakpoint($bp-767) { 
-            flex-wrap: wrap;
-
-            .form__control {
-                width: 100%;
-                margin: 0 0 30px 0;
-            }
-
-            .btn {
-                width: 100%;
-            }
-        }
-
-        @include breakpoint($bp-575) {
-            .form__control {
-                margin-right: 0;
-                width: 100%;
-                margin-bottom: 30px;
-            }
-
-            .btn {
-                width: 100%;
-            }
-        }
-
-
-    }
 }
 
 .form__control {
     height: 50px;
-    padding: 13px 24px 12px;
+    padding: 12px 24px 12px;
 
     background: #fff;
     border: 1px solid #ebeaed;
@@ -91,7 +139,7 @@
     font-family: inherit;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.1;
     color: #15143966;
 
     &--textarea {
@@ -104,6 +152,22 @@
     &:active {
         border: 1px solid #ababac;
     }
-
   
+}
+
+.form__note {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    a {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #2f80ed;
+        text-decoration: underline;
+    }
+
 }
