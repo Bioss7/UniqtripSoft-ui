@@ -1,0 +1,21 @@
+.nav-links {
+    display: flex;
+    margin: 0 -15px;
+    padding: 20px 0 16px;
+}
+
+.nav-links__item {
+    padding: 0 15px;
+}
+
+.nav-links__link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #2b2e3f;
+    text-decoration: none;
+
+    &--active {
+        color: #0071c2;
+    }
+}

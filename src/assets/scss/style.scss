@@ -1,6 +1,9 @@
 @import "vars";
 @import "mixins";
 @import "vendor/reset";
+// @import "vendor/swiper-vars";
+// @import "vendor/swiper";
+@import "vendor/bootstrap-grid.min";
 
 html {
     font-size: 62.5%;
@@ -18,7 +21,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.4rem;
     line-height: 1.5;
-    color: #000;
+    color: #2c3136;;
 
     &.no-scroll,
     &.show-sidebar {
@@ -34,11 +37,24 @@ body {
 }
 
 /* Blocks */
-@import "blocks/btn";
 @import "blocks/page";
+@import "blocks/btn";
 @import "blocks/header";
+@import "blocks/footer.scss";
 @import "blocks/burger";
 @import "blocks/typography";
+@import "blocks/form";
+
 @import "blocks/intro";
 @import "blocks/services";
 @import "blocks/advantages";
+@import "blocks/success";
+@import "blocks/slider";
+@import "blocks/application";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/nav-links";
+@import "blocks/request";
+@import "blocks/services-application";
+@import "blocks/stages-work.scss";
+

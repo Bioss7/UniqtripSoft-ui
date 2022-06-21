@@ -10,10 +10,22 @@
     width: 33.33333%;
     padding: 0 10px;
     margin-bottom: 50px;
+
+    @include breakpoint($bp-767) {
+        width: 50%;
+    }
+
+    @include breakpoint($bp-575) {
+        width: 100%;
+    }
 }
 
 .services__header{
     margin-bottom: 25px;
+
+    @include breakpoint($bp-575) {
+        width: 100%;
+    }
 }
 
 .services__img {
@@ -22,6 +34,10 @@
         max-width: 380px;
         width: 100%;
         height: auto;
+
+        @include breakpoint($bp-575) {
+            max-width: unset;
+        }
     }
 }
 
@@ -61,4 +77,8 @@
 
     background: #ecf1f7;
     border-radius: 6px;
+}
+
+.services__footer {
+    width: 100%;
 }

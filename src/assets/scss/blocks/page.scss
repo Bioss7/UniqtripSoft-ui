@@ -2,7 +2,7 @@
     min-height: 100vh;
     overflow: hidden;
 
-    @include breakpoint($tablet-bp) {
+    @include breakpoint($bp-991) {
         .show-sidebar & {
             position: relative;
         }
@@ -10,7 +10,7 @@
 }
 
 .page__mask {
-    @include breakpoint($tablet-bp) {
+    @include breakpoint($bp-991) {
         display: block;
         width: 100%;
         height: 100%;
@@ -25,13 +25,14 @@
 }
 
 .container {
-    max-width: 1181px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1180px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .section {
-    padding: 80px 0;
+    padding: 35px 0;
 
     &--services {
         padding: 70px 0 45px;
@@ -39,6 +40,14 @@
 
     &--advantages {
         padding: 70px 0;
+    }
+
+    &--slider {
+        padding: 70px 0 45px;
+    }
+
+    @include breakpoint($bp-991) {
+        padding: 50px 0;
     }
 }
 

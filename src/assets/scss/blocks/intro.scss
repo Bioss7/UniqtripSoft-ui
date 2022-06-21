@@ -5,6 +5,10 @@
     background: url("../images/intro/bg-application.jpg") center no-repeat;
     background-size: cover;
     text-align: left;
+
+    @include breakpoint($bp-575) {
+        height: 380px;
+    }
 }
 
 .intro-application__inner {
@@ -12,10 +16,19 @@
     margin: 0 auto;
     width: 100%;
     max-width: 980px;
+
+    @include breakpoint($bp-575) {
+        padding-top: 45px;
+    }
 }
 
 .intro-application__content {
     max-width: 720px;
+
+    @include breakpoint(1045px) {
+        padding: 0 20px;
+    }
+
 }
 
 .intro-application__title {
@@ -25,4 +38,10 @@
     font-weight: 600;
     line-height: 56px;
     color: #fff;
+
+    @include breakpoint($bp-575) {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
 }

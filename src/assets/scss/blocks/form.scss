@@ -1,0 +1,109 @@
+.form {
+    background: #f5f5f6;
+
+    &--feedback {
+        // padding: 48px 60px 63px 64px;
+        padding: 50px 40px 63px 40px;
+
+        @include breakpoint($bp-575) {
+            padding: 28px 16px 30px;
+        }
+    }
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    label {
+        margin-bottom: 6px;
+
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: inherit;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-575) {
+        margin-bottom: 20px;
+    }
+}
+
+.form__inner {
+    display: flex;
+
+    &--feedback {
+        & .form__control {
+            margin-right: 15px;
+            width: 51%;
+        }
+
+        .btn {
+            height: 50px;
+            width: 45%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include breakpoint($bp-767) { 
+            flex-wrap: wrap;
+
+            .form__control {
+                width: 100%;
+                margin: 0 0 30px 0;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @include breakpoint($bp-575) {
+            .form__control {
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+
+    }
+}
+
+.form__control {
+    height: 50px;
+    padding: 13px 24px 12px;
+
+    background: #fff;
+    border: 1px solid #ebeaed;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #15143966;
+
+    &--textarea {
+        min-height: 170px;
+        max-height: 170px;
+        resize: none;
+    }
+
+    &:focus,
+    &:active {
+        border: 1px solid #ababac;
+    }
+
+  
+}

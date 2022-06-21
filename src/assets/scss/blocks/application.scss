@@ -1,0 +1,147 @@
+.application {
+    background: #fff;
+}
+
+.application__title {
+    margin-bottom: 50px;
+
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+
+    @include breakpoint($bp-991) {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+}
+
+.application__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    @include breakpoint($bp-991) {
+        flex-direction: column;
+    }
+}
+
+.application__item {
+    padding: 0 15px;
+    width: 50%;
+
+    @include breakpoint($bp-991) {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+}
+
+.application__subtitle {
+    margin-bottom: 18px;
+    max-width: 365px;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+}
+
+.application__text {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+
+    @include breakpoint($bp-575) {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+
+        @include breakpoint($bp-575) {
+            display: block;
+        }
+    }
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}
+
+.application__link {
+    display: inline-block;
+    margin-bottom: 38px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color:#0071c2;
+
+    transition: color .1s linear;
+
+    &:hover {
+        color:#0071c2;
+        text-decoration: none;
+    }
+
+    @include breakpoint($bp-575) {
+        margin-bottom: 20px;
+    }
+}
+
+.application__btn {
+    display: none;
+    
+    .btn {
+        width: 100%;
+    }
+
+    @include breakpoint($bp-575) {
+        display: block;
+    }
+}
+
+.application-download {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include breakpoint($bp-575) {
+        display: none;
+    }
+}
+
+.application-download__item {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.application__img {
+    position: relative;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: 374px;
+
+        @include breakpoint($bp-991) {
+            margin: 0 auto;
+            height: auto;
+        }
+    }
+
+}
