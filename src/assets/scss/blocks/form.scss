@@ -30,7 +30,7 @@
         }
     }
 
-    &--package {
+    &--orange {
         padding: 53px 139px 53px;
         background: linear-gradient(133.93deg, #fda05d 15.61%, #febb02 85.11%), #ffd151;
 
@@ -56,6 +56,11 @@
 
         & .form__group {
             margin-bottom: 30px;
+
+            & .form__control--textarea {
+                min-height: 88px;
+                max-height: 88px;
+            }
         }
     }
 }

@@ -9,13 +9,13 @@
 }
 
 .services-application__header {
-    padding: 42px 66px 29px;
+    padding: 42px 66px 30px;
 }
 
 .services-application__content {
     display: flex;
     flex-direction: column;
-    padding: 26px 66px 26px;
+    padding: 25px 66px 40px;
     min-height: 295px;
 }
 
@@ -36,6 +36,20 @@
         padding-left: 25px;
         li {
             list-style: disc;
+        }
+    }
+
+    &--marker-dash {
+        ul {
+            
+            li {
+                list-style: none;
+            }
+
+            li:before {
+                content:  "-";
+                position: relative;
+            }
         }
     }
 }

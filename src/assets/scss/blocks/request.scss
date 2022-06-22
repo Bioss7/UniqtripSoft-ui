@@ -23,9 +23,34 @@
     margin: 0 -15px;
 }
 
+.request__title {
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #0071c2;
+}
+
 .request__item {
     width: 50%;
     padding: 0 15px;
+
+    &:last-child {
+        position: relative;
+
+        &::after {
+            content: "";
+            background: url('/assets/images/mask.png') no-repeat;
+            background-position: top;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
 }
 
 .request__text {
@@ -36,6 +61,7 @@
 }
 
 .request__img {
+
     img {
         display: block;
         height: auto;
