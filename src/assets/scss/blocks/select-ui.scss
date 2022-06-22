@@ -1,0 +1,134 @@
+.select-ui{
+    width: 100%;
+    position: relative;
+}
+
+.select-ui.open .select-ui__dropdown{
+    display: block;
+}
+
+.select-ui.open .select-ui__input{
+    border-bottom: none;
+    cursor: pointer;
+
+    &::after{
+        transform: rotate(-180deg);
+        // transform: rotate(-45deg);
+    }
+}
+
+.select-ui.open .select-ui__backdrop{
+    display: block;
+}
+
+.select-ui__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 12px 24px 12px;
+    border: 1px solid #ebeaed;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    cursor: pointer;
+
+    span{
+        color: #333;
+        font-size: 18px;
+        font-weight: 400;
+        min-width: 100px;
+        max-width: 500px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 20px;
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        width: 14px;
+        height: 9px;
+        background: url('/assets/images/arrow.svg') no-repeat;
+        position: absolute;
+        right: 20px;
+        top: 45%;
+        z-index: 1;
+        transition: transform 0.2s;
+
+        // content: "";
+        // display: block;
+        // width: 10px;
+        // height: 10px;
+        // border-top: 2px solid #7b7c7d;
+        // border-right: 2px solid #7b7c7d;
+        // position: absolute;
+        // right: 20px;
+        // top: 45%;
+        // z-index: 1;
+        // transform: translateY(-50%) rotate(135deg);
+        // transition: transform 0.2s;
+    }
+}
+
+.select-ui__dropdown{
+    display: none;
+    position: absolute;
+    z-index: 101;
+    border: 1px solid #ccc;
+    top: 46px;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    min-height: 36px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar{
+        width: 4px;
+        background: #ececec;
+        border-radius: 14px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: #7b7c7d;
+        border-radius: 14px;
+    }
+}
+
+.select-ui__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.select-ui__item{
+    padding: 1rem 1rem 1rem 1.4rem;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover{
+        background-color: #eee;
+        cursor: pointer;
+        transition: .15s background-color ease-in;
+    }
+
+    &.selected{
+        background-color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.select-ui__backdrop{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}

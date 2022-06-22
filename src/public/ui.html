@@ -46,6 +46,10 @@ title: UI KIT
                 <input class="form__control" type="text" placeholder="Имя">
             </div>
         </div>
+        <div class="form__group">
+            <label for="">Select</label>
+            <div class="select" id="select-ui"></div>
+        </div>
         <hr>
     </div>
 </section>
@@ -134,3 +138,26 @@ title: UI KIT
         <br class="mb-5">
     </div>
 </section>
+
+<!-- script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const select = new SelectUI('#select-ui', {
+            placeholder: 'Выберите элемент',
+            // selectedId: '2',
+            data: [
+                {id: '1', value: 'По популярности'},
+                {id: '2', value: 'По возрастанию цены'},
+                {id: '3', value: 'По возрастанию цены'},
+                {id: '4', value: 'По возрастанию цены'},
+                {id: '5', value: 'По возрастанию цены'},
+                {id: '6', value: 'По возрастанию цены'},
+                {id: '7', value: 'По возрастанию цены'},
+                {id: '8', value: 'По возрастанию цены'},
+            ],
+                onSelect(item){
+                // console.log('selected Item', item)
+            }
+        });
+    })
+</script>

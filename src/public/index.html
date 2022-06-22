@@ -933,7 +933,7 @@ title: Main
             </div>
             <div class="form__group form__group--note">
                 <label for="">Выберите нужный вам пакет внедрения </label>
-                <input class="form__control" type="text" placeholder="Настройка бизнес-процессов">
+                <div class="js-select"></div>
             </div>
             <div class="form__note">
                 *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
@@ -945,3 +945,26 @@ title: Main
         </form>
     </div>
 </section>
+
+<!-- script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const select = new SelectUI('.js-select', {
+            placeholder: 'Выберите элемент',
+            // selectedId: '2',
+            data: [
+                {id: '1', value: 'По популярности'},
+                {id: '2', value: 'По возрастанию цены'},
+                {id: '3', value: 'По возрастанию цены'},
+                {id: '4', value: 'По возрастанию цены'},
+                {id: '5', value: 'По возрастанию цены'},
+                {id: '6', value: 'По возрастанию цены'},
+                {id: '7', value: 'По возрастанию цены'},
+                {id: '8', value: 'По возрастанию цены'},
+            ],
+                onSelect(item){
+                // console.log('selected Item', item)
+            }
+        });
+    })
+</script>
