@@ -10,11 +10,11 @@
     font-size: 0;
     color: transparent;
 
-    position: absolute;
-    top: 50%;
-    right: 1.5rem;
+    position: relative;
+    // top: 50%;
+    // right: 1.5rem;
 
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
 
     &::before,
     &::after,

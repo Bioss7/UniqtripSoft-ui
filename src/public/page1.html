@@ -3,294 +3,268 @@ layout: default
 title: Page 1
 ---
 
-<!-- Битрикс 24 -->
-<section class="section">
+<!-- header -->
+<header class="header">
     <div class="container">
-        <div class="title-h2 text-center">Битрикс 24</div>
-        <ul class="nav-links">
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Онлайн офис</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link nav-links__link--active" href="#">CRM</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Контакт центры</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Сайты и магазины</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Автоматизации</a>
-            </li>
-        </ul>
-
-        <div class="request">
-            <div class="request__inner">
-                <div class="request__item">
-                    <div class="request__text">
-                        В CRM вы работаете с клиентами: открытые линии, лиды и сделки, счета и оплаты, каналы продаж
-                        Контакт - центр позволяет объединять все каналы общения с клиентами
-                        NEW CRM - маркетинг позволяет легко работать с большой клиентской базой
-                        CRM-аналитика контролирует эффективность ваших менеджеров.
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="header__left">
+                    <div class="header__logo">
+                        <img src="../assets/images/logo.svg" alt="logo">
                     </div>
-                    <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
-                </div>
-                <div class="request__item">
-                    <div class="request__img">
-                        <img src="../assets/images/request/01.png" alt="request-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Услуги -->
-<section class="section">
-    <div class="container">
-        <div class="title-h2">Услуги</div>
-        <div class="services-application">
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Интеграция с 1С
-                    </div>
-                </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Настройка типовой интеграции с любой конфигурацией 1С любого тарифного плана Битрикс24
-                        <br><br>
-                        Преимущества:
-                        <ul>
-                            <li>
-                                При изменении данных в 1С они меняются в Битрикс24 и наоборот
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Главная</a>
                             </li>
-                            <li>
-                                Автоматическое формирование документов при смене статусов: Счет на оплату, Счет-фактура, Акты и другие документы
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Проекты</a>
                             </li>
-                            <li>
-                                Учет номенклатуры и товаров, а также остатков по ним в разрезе складов
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">О компании</a>
                             </li>
-                            <li>
-                                Учет и проведение оплат, а также контроль движений денежных средств в разрезе касс и расчетных счетов
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Контакты</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
-                                </div>
-                            </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="header__right">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <form class="search" action="/" method="get">
+                                    <input class="search__input" type="text" placeholder="Поиск">
+                                    <button class="search__btn"></button>
+                                </form>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link has-subnav" href="#">RUS</a>
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="#">EN</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Пакетное внедрение CRM
+            <div class="header__bottom">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Битрикс 24</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Разработка сайтов</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Разработка мобильных приложений</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Бизнес - аналитика</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Сопровождение 1С</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- UI KIT LINK -->
+<div class="container">
+    <hr>
+    <a class="btn btn--link" href="ui.html">UI KIT</a>
+    <hr>
+</div>
+
+<!-- intro-application -->
+<div class="container">
+    <div class="intro-application">
+        <div class="intro-application__inner">
+            <div class="intro-application__content">
+                <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии Битрикс24</h1>
+                <button class="btn btn--white" type="button">Оставить заявку</button>
+                <a class="btn btn--white" type="button" href="#">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services -->
+<section class="section section--services" id="services">
+    <div class="container">
+        <div class="services">
+            <div class="services__item">
+                <div class="services__header">
+                    <div class="services__img">
+                        <img src="../assets/images/services/services-01.png" alt="services">
                     </div>
                 </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Настраиваем базовый функционал CRM Битрикс24, подключаем все каналы коммуникации и телефонию. Обучаем и практикуем вместе с Вашей командой, чтобы не один клиент не остался без внимания
+                <div class="services__content">
+                    <div class="services__title">
+                        1С Предприятие
                     </div>
-                    <div class="services-application__links">
-                        <a href="#">Скачать презентация</a><a href="#">Получить выгодное предложение</a>
+                    <div class="services__text">
+                        Полный спектр услуг по продаже и запуску
                     </div>
                 </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
-                                </div>
-                            </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="services__footer">
+                    <a class="services__btn" href="#">Перейти</a>
                 </div>
             </div>
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Настройка бизнес - процессов
+            <div class="services__item">
+                <div class="services__header">
+                    <div class="services__img">
+                        <img src="../assets/images/services/services-02.png" alt="services">
                     </div>
                 </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Разработка блок - схем бизнес процессов, консалтинг. Автоматизация работы сотрудников. Документооборот. Настройка типовых и процессов любой сложности
+                <div class="services__content">
+                    <div class="services__title">
+                        Бизнес аналитика PowerBI
+                    </div>
+                    <div class="services__text">
+                        Полный спектр услуг по продаже и запуску
                     </div>
                 </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
-                                </div>
-                            </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="services__footer">
+                    <a class="services__btn" href="#">Перейти</a>
                 </div>
             </div>
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Расширение фукционала
+            <div class="services__item">
+                <div class="services__header">
+                    <div class="services__img">
+                        <img src="../assets/images/services/services-03.png" alt="services">
                     </div>
                 </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Полная настройка интернет - магазина: авторизация, корзина, личный кабинет, функционал промокодов. По завершении настройки вы сможете протестировать работоспособность интернет магазина и всех стадий заказа товаров и услуг (до момента оплаты)
+                <div class="services__content">
+                    <div class="services__title">
+                        Битрикс 24
+                    </div>
+                    <div class="services__text">
+                        Полный спектр услуг по продаже и запуску
                     </div>
                 </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                <div class="services__footer">
+                    <a class="services__btn" href="#">Перейти</a>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__header">
+                    <div class="services__img">
+                        <img src="../assets/images/services/services-04.png" alt="services">
                     </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
-                                </div>
-                            </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="services__content">
+                    <div class="services__title">
+                        АСУ Logus
                     </div>
+                    <div class="services__text">
+                        Полный спектр услуг по продаже и запуску
+                    </div>
+                </div>
+                <div class="services__footer">
+                    <a class="services__btn" href="#">Перейти</a>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__header">
+                    <div class="services__img">
+                        <img src="../assets/images/services/services-05.png" alt="services">
+                    </div>
+                </div>
+                <div class="services__content">
+                    <div class="services__title">
+                        Разработка сайтов
+                    </div>
+                    <div class="services__text">
+                        Построение аналитических отчетов в любых разрезах
+                    </div>
+                </div>
+                <div class="services__footer">
+                    <a class="services__btn" href="#">Перейти</a>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__header">
+                    <div class="services__img">
+                        <img src="../assets/images/services/services-06.png" alt="services">
+                    </div>
+                </div>
+                <div class="services__content">
+                    <div class="services__title">
+                        Разработка мобильных приложения
+                    </div>
+                    <div class="services__text">
+                        Полный спектр услуг по продаже и запуску
+                    </div>
+                </div>
+                <div class="services__footer">
+                    <a class="services__btn" href="#">Перейти</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Этапы проведения работ -->
-<section class="section">
+<!-- Наши преимущества -->
+<section class="section section--advantages" id="advantages">
     <div class="container">
-        <div class="title-h2">Этапы проведения работ</div>
-        <div class="stages-work">
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        1
+        <div class="title-h2">
+            Наши преимущества
+        </div>
+        <div class="advantages">
+            <div class="advantages__item">
+                <a class="advantages__link" href="#">
+                    <div class="advantages__img">
+                        <img src="../assets/images/advantages/advantages-01.svg" alt="">
                     </div>
-                    <div class="stages-work__title">
-                        Встреча с менеджером
-                    </div>
-                    <div class="stages-work__text">
-                        Вы опишите менеджеру свои проблемы, а он предложит их поэтапное решение. При необходимости проведет демонстрацию работы системы
-                    </div>
-                </a>
-            </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        2
-                    </div>
-                    <div class="stages-work__title">
-                        Заполнение брифа с бизнес-аналитиком
-                    </div>
-                    <div class="stages-work__text">
-                        Проведем первичный аудит Вашего бизнеса. Подробно разберете каждую задачу. Распишите сроки реализации и стоимость каждого этапа работ
+                    <div class="advantages__title">
+                        9 лет успешной работы на рынке автоматизации
                     </div>
                 </a>
             </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        3
+            <div class="advantages__item">
+                <a class="advantages__link" href="#">
+                    <div class="advantages__img">
+                        <img src="../assets/images/advantages/advantages-02.svg" alt="">
                     </div>
-                    <div class="stages-work__title">
-                        Базовое внедрение
-                    </div>
-                    <div class="stages-work__text">
-                        Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни один из Ваших клиентов
+                    <div class="advantages__title">
+                        UniqTripSoft - официальный дилер компании Libra Hospitality
                     </div>
                 </a>
             </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        4
+            <div class="advantages__item">
+                <a class="advantages__link" href="#">
+                    <div class="advantages__img">
+                        <img src="../assets/images/advantages/advantages-03.svg" alt="">
                     </div>
-                    <div class="stages-work__title">
-                        Обучение
-                    </div>
-                    <div class="stages-work__text">
-                        Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни один из Ваших клиентов
+                    <div class="advantages__title">
+                        с 2021 года UniqTripSoft – является партнером IT-колледжа «Сириус»
                     </div>
                 </a>
             </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        5
+            <div class="advantages__item">
+                <a class="advantages__link" href="#">
+                    <div class="advantages__img">
+                        <img src="../assets/images/advantages/advantages-04.svg" alt="">
                     </div>
-                    <div class="stages-work__title">
-                        Интеграция с необходимыми системами и настройка бизнес-процессов
-                    </div>
-                    <div class="stages-work__text">
-                        После начала работы с Битрикс24, по необходимости проведем аудит бизнеса и составим ТЗ на дальнейшие
+                    <div class="advantages__title">
+                        UniqTrip -"золотой сертифицированный партнер" компании 1С-Битрикс
                     </div>
                 </a>
             </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        6
+            <div class="advantages__item">
+                <a class="advantages__link" href="#">
+                    <div class="advantages__img">
+                        <img src="../assets/images/advantages/advantages-05.svg" alt="">
                     </div>
-                    <div class="stages-work__title">
-                        Поддержка
-                    </div>
-                    <div class="stages-work__text">
-                        В рамках базового внедрения предусмотрена техническая поддержка в течение 1 месяца. Далее Вы сможете продлить поддержку, чтобы ваша CRM всегда была актуальна и подстраивалась под изменения Вашего бизнеса. 
+                    <div class="advantages__title">
+                        Cобственные программные продукты на платформе «1С:Предприятие 8» и Битрикс 24
                     </div>
                 </a>
             </div>
@@ -298,10 +272,12 @@ title: Page 1
     </div>
 </section>
 
-<!-- Slider -->
-<section>
-    <div class="container">
-        <h2 class="title-h2">Успех наших клиентов</h2>
+<!-- Slider Успех наших клиентов -->
+<section class="section section--slider-success" id="success-slider">
+   <div class="container">
+        <h2 class="title-h2">
+            Успех наших клиентов
+        </h2>
         <div class="slider-swiper swiper-container">
             <div class="slider-swiper__wrapper swiper-wrapper">
                 <div class="slider-swiper__slide swiper-slide">
@@ -379,121 +355,121 @@ title: Page 1
                 </div>
             </div>
         </div>
-        <br class="mb-5">
-    </div>
+   </div>
 </section>
 
-<!-- Пакеты на подключение -->
-<section class="section">
+<!-- Приложение "Управление остатками" -->
+<section class="section" id="section">
     <div class="container">
-        <h2 class="title-h2">Пакеты на подключение</h2>
-        <div class="package">
-            <div class="package__inner">
-                <div class="package__item">
-                    <div class="package__card">
-                        <div class="package__title">
-                            Базовый
+        <div class="application">
+            <div class="application__title">Приложение "Управление остатками"</div>
+            <div class="application__inner">
+                <div class="application__item">
+                    <div class="application__subtitle">Мы разработали функционал, которого не хватало</div>
+                    <div class="application__text">
+                        Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов, справочников и регистров учета. Работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также с ранее заведенными контактами и сделками.
+                    </div>
+                    <div class="application__text application__text--mobile">
+                        Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов, справочников и регистров учета.
+                    </div>
+                    <div class="application__text application__text--mobile">
+                        Приложение работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также с ранее заведенными контактами и сделками, смотрите видео.
+                    </div>
+                    <a class="application__link" href="">Подробнее</a>
+                    <div class="application__btn">
+                        <button class="btn btn--blue">Скачать</button>
+                    </div>
+                    <div class="application-download">
+                        <div class="application-download__item">
+                            <a href="#">
+                                <img src="/assets/images/application/appstore.svg" alt="appstore">
+                            </a>
                         </div>
-                        <div class="package__price">
-                            <div class="package__value">4 790 ₽</div>
-                            <div class="package__month">месяц</div>
+                        <div class="application-download__item">
+                            <a href="#">
+                                <img src="/assets/images/application/googleplay.svg" alt="googleplay">
+                            </a>
                         </div>
-                        <div class="package__text">
-                            Для эффективной работы небольших компаний и отделов продаж Пользователей 5
-                        </div>
-                        <a class="package__link" href="#">Подробнее</a>
-                        <a class="package__btn" href="#">Заказать</a>
                     </div>
                 </div>
-                <div class="package__item">
-                    <div class="package__card package__card--green">
-                        <div class="package__title package__title--white">
-                            Стандартный
-                        </div>
-                        <div class="package__price package__price--white">
-                            <div class="package__value">6 790 ₽</div>
-                            <div class="package__month">месяц</div>
-                        </div>
-                        <div class="package__text package__text--white">
-                            Для эффективной работы небольших компаний и отделов продаж Пользователей 5
-                        </div>
-                        <a class="package__link" href="#">Подробнее</a>
-                        <a class="package__btn" href="#">Заказать</a>
+                <div class="application__item">
+                    <div class="application__img">
+                        <img src="../assets/images/application/test.png" alt="">
                     </div>
                 </div>
-                <div class="package__item">
-                    <div class="package__card">
-                        <div class="package__title package__title--white">
-                            Профессиональный
-                        </div>
-                        <div class="package__price package__price--white">
-                            <div class="package__value">9 790 ₽</div>
-                            <div class="package__month">месяц</div>
-                        </div>
-                        <div class="package__text package__text--white">
-                            Для эффективной работы небольших компаний и отделов продаж Пользователей 500
-                        </div>
-                        <a class="package__link" href="#">Подробнее</a>
-                        <a class="package__btn" href="#">Заказать</a>
-                    </div>
-                </div>
-            </div>
-            <div class="package__note">
-                *Стоимость внедрения лицензции расчитают отдельно
             </div>
         </div>
     </div>
 </section>
 
-<!-- Заказать пакет внедрения -->
-<section class="section">
+<!-- Feedback -->
+<section class="section" id="section">
     <div class="container">
-        <h2 class="title-h2">Заказать пакет внедрения</h2>
-        <form class="form form--orange" action="/" method="post">
-            <div class="form__inner form__inner--orange">
-                <div class="form__group">
-                    <label for="">E-mail</label>
-                    <input class="form__control" type="text" placeholder="Ваш e-mail">
+        <div class="feedback">
+            <div class="feedback__inner">
+                <div class="feedback__item">
+                    <div class="feedback__contacts">
+                        <div class="feedback__title title-h2">
+                            Связаться
+                        </div>
+                        <div class="feedback__text feedback__text--contact">
+                            Мы ценим каждого клиента и гордимся тем, что 80% клиентов снова возвращаются к нам работать.
+                        </div>
+                        <div class="contacts contacts--feedback">
+                            <a class="contacts-link" href="tel:7(862)2777042">
+                                <img class="contacts-icon" src="/assets/images/phone-black.svg" alt="">
+                                +7 (862) 277 70 42
+                            </a>
+                            <a class="contacts-link" href="mailto:info@designmodo.com">
+                                <img class="contacts-icon" src="/assets/images/mail-black.svg" alt="">
+                                info@designmodo.com
+                            </a>
+                        </div>
+                        <div class="feedback__subtitle">
+                            Найдите нас на карте
+                        </div>
+                        <div class="feedback__address">
+                            Главный офис: г. Сочи, Олимпийский проспект, 21 , помещение 350 
+                        </div>
+                        <div class="feedback__address feedback__address--map">
+                            Отдел продаж: г. Сочи, Триумфальный проезд,1 , офис 2-021
+                        </div>
+                        <div class="feedback__map" style="background-image: url('/assets/images/feedback/mask-map.png');">
+
+                        </div>
+                    </div>
                 </div>
-                <div class="form__group">
-                    <label for="">Ваше имя</label>
-                    <input class="form__control" type="text" placeholder="Ваш имя">
+                <div class="feedback__item">
+                    <div class="feedback__title title-h2">
+                        Связаться
+                    </div>
+                    <div class="feedback__text feedback__text--forms">
+                        Мы всегда ищем следующий отличный проект.
+                    </div>
+                    <form class="form form--feedback" action="/" method="post">
+                        <div class="form__group">
+                            <label for="">E-mail</label>
+                            <input class="form__control" type="text" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Cообщение</label>
+                            <textarea class="form__control form__control--textarea" type="text" placeholder="Напишите нам"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Ваше имя</label>
+                            <div class="form__inner form__inner--feedback">
+                                <div class="form__group form__group--feedback-input">
+                                    <input class="form__control" type="text" placeholder="Имя">
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="form__group form__group--note">
-                <label for="">Выберите нужный вам пакет внедрения </label>
-                <div class="js-select"></div>
-            </div>
-            <div class="form__note">
-                *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
-            </div>
-           
-            <div class="form__group form__group--btn">
-                <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
-            </div>
-        </form>
+        </div>
     </div>
 </section>
 
-<!-- script -->
-<script>
-    document.addEventListener("DOMContentLoaded", function(){
-    const select = new SelectUI('.js-select', {
-            placeholder: 'Выберите элемент',
-            // selectedId: '2',
-            data: [
-                {id: '1', value: 'По популярности'},
-                {id: '2', value: 'По возрастанию цены'},
-                {id: '3', value: 'По возрастанию цены'},
-                {id: '4', value: 'По возрастанию цены'},
-                {id: '5', value: 'По возрастанию цены'},
-                {id: '6', value: 'По возрастанию цены'},
-                {id: '7', value: 'По возрастанию цены'},
-                {id: '8', value: 'По возрастанию цены'},
-            ],
-                onSelect(item){
-                // console.log('selected Item', item)
-            }
-        });
-    })
-</script>

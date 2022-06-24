@@ -4,15 +4,15 @@ title: Main
 ---
 
 <!-- header -->
-<div class="container">
-    <header class="header">
+<header class="header">
+    <div class="container">
         <div class="header__inner">
             <div class="header__top">
                 <div class="header__left">
                     <div class="header__logo">
                         <img src="../assets/images/logo.svg" alt="logo">
                     </div>
-                    <nav class="nav">
+                    <nav class="nav nav-left-mobile">
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a class="nav__link" href="#">Главная</a>
@@ -40,7 +40,6 @@ title: Main
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link has-subnav" href="#">RUS</a>
-
                                 <ul class="subnav">
                                     <li>
                                         <a class="subnav__link" href="#">EN</a>
@@ -49,9 +48,13 @@ title: Main
                             </li>
                         </ul>
                     </nav>
+                    <button class="burger" type="button" id="sidebarToggle">
+                        <span>Открыть навигацию</span>
+                    </button>
                 </div>
+        
             </div>
-            <div class="header__bottom">
+            <div class="header__bottom nav-bottom-mobile">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -73,404 +76,16 @@ title: Main
                 </nav>
             </div>
         </div>
-    </header>
-</div>
+    </div>
+</header>
 
 <!-- UI KIT LINK -->
-<div class="container">
-    <hr>
-    <a class="btn btn--link" href="ui.html">UI KIT</a>
-    <hr>
+<div class="container" style="height: 100vh;">
+    <a class="btn btn--link" href="ui.html">UI KIT</a><br>
+    <a class="btn btn--link" href="/public/page1.html">Page 1</a><br>
+    <a class="btn btn--link" href="/public/page2.html">Page 2</a><br>
+    <a class="btn btn--link" href="/public/page3.html">Page 3</a><br>
+    <a class="btn btn--link" href="/public/page4.html">Page 4</a><br>
 </div>
 
-<!-- intro-application -->
-<div class="container">
-    <div class="intro-application">
-        <div class="intro-application__inner">
-            <div class="intro-application__content">
-                <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии Битрикс24</h1>
-                <button class="btn btn--white" type="button">Оставить заявку</button>
-                <a class="btn btn--white" type="button" href="#">Оставить заявку</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- services -->
-<section class="section section--services" id="services">
-    <div class="container">
-        <div class="services">
-            <div class="services__item">
-                <div class="services__header">
-                    <div class="services__img">
-                        <img src="../assets/images/services/services-01.png" alt="services">
-                    </div>
-                </div>
-                <div class="services__content">
-                    <div class="services__title">
-                        1С Предприятие
-                    </div>
-                    <div class="services__text">
-                        Полный спектр услуг по продаже и запуску
-                    </div>
-                </div>
-                <div class="services__footer">
-                    <a class="services__btn" href="#">Перейти</a>
-                </div>
-            </div>
-            <div class="services__item">
-                <div class="services__header">
-                    <div class="services__img">
-                        <img src="../assets/images/services/services-02.png" alt="services">
-                    </div>
-                </div>
-                <div class="services__content">
-                    <div class="services__title">
-                        Бизнес аналитика PowerBI
-                    </div>
-                    <div class="services__text">
-                        Полный спектр услуг по продаже и запуску
-                    </div>
-                </div>
-                <div class="services__footer">
-                    <a class="services__btn" href="#">Перейти</a>
-                </div>
-            </div>
-            <div class="services__item">
-                <div class="services__header">
-                    <div class="services__img">
-                        <img src="../assets/images/services/services-03.png" alt="services">
-                    </div>
-                </div>
-                <div class="services__content">
-                    <div class="services__title">
-                        Битрикс 24
-                    </div>
-                    <div class="services__text">
-                        Полный спектр услуг по продаже и запуску
-                    </div>
-                </div>
-                <div class="services__footer">
-                    <a class="services__btn" href="#">Перейти</a>
-                </div>
-            </div>
-            <div class="services__item">
-                <div class="services__header">
-                    <div class="services__img">
-                        <img src="../assets/images/services/services-04.png" alt="services">
-                    </div>
-                </div>
-                <div class="services__content">
-                    <div class="services__title">
-                        АСУ Logus
-                    </div>
-                    <div class="services__text">
-                        Полный спектр услуг по продаже и запуску
-                    </div>
-                </div>
-                <div class="services__footer">
-                    <a class="services__btn" href="#">Перейти</a>
-                </div>
-            </div>
-            <div class="services__item">
-                <div class="services__header">
-                    <div class="services__img">
-                        <img src="../assets/images/services/services-05.png" alt="services">
-                    </div>
-                </div>
-                <div class="services__content">
-                    <div class="services__title">
-                        Разработка сайтов
-                    </div>
-                    <div class="services__text">
-                        Построение аналитических отчетов в любых разрезах
-                    </div>
-                </div>
-                <div class="services__footer">
-                    <a class="services__btn" href="#">Перейти</a>
-                </div>
-            </div>
-            <div class="services__item">
-                <div class="services__header">
-                    <div class="services__img">
-                        <img src="../assets/images/services/services-06.png" alt="services">
-                    </div>
-                </div>
-                <div class="services__content">
-                    <div class="services__title">
-                        Разработка мобильных приложения
-                    </div>
-                    <div class="services__text">
-                        Полный спектр услуг по продаже и запуску
-                    </div>
-                </div>
-                <div class="services__footer">
-                    <a class="services__btn" href="#">Перейти</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Наши преимущества -->
-<section class="section section--advantages" id="advantages">
-    <div class="container">
-        <div class="title-h2">
-            Наши преимущества
-        </div>
-        <div class="advantages">
-            <div class="advantages__item">
-                <a class="advantages__link" href="#">
-                    <div class="advantages__img">
-                        <img src="../assets/images/advantages/advantages-01.svg" alt="">
-                    </div>
-                    <div class="advantages__title">
-                        9 лет успешной работы на рынке автоматизации
-                    </div>
-                </a>
-            </div>
-            <div class="advantages__item">
-                <a class="advantages__link" href="#">
-                    <div class="advantages__img">
-                        <img src="../assets/images/advantages/advantages-02.svg" alt="">
-                    </div>
-                    <div class="advantages__title">
-                        UniqTripSoft - официальный дилер компании Libra Hospitality
-                    </div>
-                </a>
-            </div>
-            <div class="advantages__item">
-                <a class="advantages__link" href="#">
-                    <div class="advantages__img">
-                        <img src="../assets/images/advantages/advantages-03.svg" alt="">
-                    </div>
-                    <div class="advantages__title">
-                        с 2021 года UniqTripSoft – является партнером IT-колледжа «Сириус»
-                    </div>
-                </a>
-            </div>
-            <div class="advantages__item">
-                <a class="advantages__link" href="#">
-                    <div class="advantages__img">
-                        <img src="../assets/images/advantages/advantages-04.svg" alt="">
-                    </div>
-                    <div class="advantages__title">
-                        UniqTrip -"золотой сертифицированный партнер" компании 1С-Битрикс
-                    </div>
-                </a>
-            </div>
-            <div class="advantages__item">
-                <a class="advantages__link" href="#">
-                    <div class="advantages__img">
-                        <img src="../assets/images/advantages/advantages-05.svg" alt="">
-                    </div>
-                    <div class="advantages__title">
-                        Cобственные программные продукты на платформе «1С:Предприятие 8» и Битрикс 24
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Slider Успех наших клиентов -->
-<section class="section section--slider-success" id="success-slider">
-   <div class="container">
-        <h2 class="title-h2">
-            Успех наших клиентов
-        </h2>
-        <div class="slider-swiper swiper-container">
-            <div class="slider-swiper__wrapper swiper-wrapper">
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
-                            </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
-                            </div>
-                            <ul class="success-card__list">
-                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                <li>Поддерживаемые типы закупок</li>
-                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                            </ul>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
-                            </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
-                            </div>
-                            <div class="success-card__list">
-                                <ul>
-                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                    <li>Поддерживаемые типы закупок</li>
-                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                </ul>
-                            </div>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
-                            </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
-                            </div>
-                            <div class="success-card__list">
-                                <ul>
-                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                    <li>Поддерживаемые типы закупок</li>
-                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                </ul>
-                            </div>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </div>
-</section>
-
-<!-- Приложение "Управление остатками" -->
-<section class="section" id="section">
-    <div class="container">
-        <div class="application">
-            <div class="application__title">Приложение "Управление остатками"</div>
-            <div class="application__inner">
-                <div class="application__item">
-                    <div class="application__subtitle">Мы разработали функционал, которого не хватало</div>
-                    <div class="application__text">
-                        Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов, справочников и регистров учета. Работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также с ранее заведенными контактами и сделками.
-                    </div>
-                    <div class="application__text application__text--mobile">
-                        Приложение "Управление остатками" позволяет вести учет товаров, создавать новые типы документов, справочников и регистров учета.
-                    </div>
-                    <div class="application__text application__text--mobile">
-                        Приложение работает с ранее созданными товарами в модуле Битрикс 24 CRM, раздел Товары, а также с ранее заведенными контактами и сделками, смотрите видео.
-                    </div>
-                    <a class="application__link" href="">Подробнее</a>
-                    <div class="application__btn">
-                        <button class="btn btn--blue">Скачать</button>
-                    </div>
-                    <div class="application-download">
-                        <div class="application-download__item">
-                            <a href="#">
-                                <img src="/assets/images/application/appstore.svg" alt="appstore">
-                            </a>
-                        </div>
-                        <div class="application-download__item">
-                            <a href="#">
-                                <img src="/assets/images/application/googleplay.svg" alt="googleplay">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="application__item">
-                    <div class="application__img">
-                        <img src="../assets/images/application/test.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Feedback -->
-<section class="section" id="section">
-    <div class="container">
-        <div class="feedback">
-            <div class="feedback__inner">
-                <div class="feedback__item">
-                    <div class="feedback__contacts">
-                        <div class="feedback__title title-h2">
-                            Связаться
-                        </div>
-                        <div class="feedback__text feedback__text--contact">
-                            Мы ценим каждого клиента и гордимся тем, что 80% клиентов снова возвращаются к нам работать.
-                        </div>
-                        <div class="contacts contacts--feedback">
-                            <a class="contacts-link" href="tel:7(862)2777042">
-                                <img class="contacts-icon" src="/assets/images/phone-black.svg" alt="">
-                                +7 (862) 277 70 42
-                            </a>
-                            <a class="contacts-link" href="mailto:info@designmodo.com">
-                                <img class="contacts-icon" src="/assets/images/mail-black.svg" alt="">
-                                info@designmodo.com
-                            </a>
-                        </div>
-                        <div class="feedback__subtitle">
-                            Найдите нас на карте
-                        </div>
-                        <div class="feedback__address">
-                            Главный офис: г. Сочи, Олимпийский проспект, 21 , помещение 350 
-                        </div>
-                        <div class="feedback__address feedback__address--map">
-                            Отдел продаж: г. Сочи, Триумфальный проезд,1 , офис 2-021
-                        </div>
-                        <div class="feedback__map" style="background-image: url('/assets/images/feedback/mask-map.png');">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback__item">
-                    <div class="feedback__title title-h2">
-                        Связаться
-                    </div>
-                    <div class="feedback__text feedback__text--forms">
-                        Мы всегда ищем следующий отличный проект.
-                    </div>
-                    <form class="form form--feedback" action="/" method="post">
-                        <div class="form__group">
-                            <label for="">E-mail</label>
-                            <input class="form__control" type="text" placeholder="Ваш e-mail">
-                        </div>
-                        <div class="form__group">
-                            <label for="">Cообщение</label>
-                            <textarea class="form__control form__control--textarea" type="text" placeholder="Напишите нам"></textarea>
-                        </div>
-                        <div class="form__group">
-                            <label for="">Ваше имя</label>
-                            <div class="form__inner form__inner--feedback">
-                                <div class="form__group form__group--feedback-input">
-                                    <input class="form__control" type="text" placeholder="Имя">
-                                </div>
-                                <div class="form__group">
-                                    <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
