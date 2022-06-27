@@ -5,5 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         centeredSlides: true
     });
+
+    new Swiper('.js-final-design-slider', {
+        slidesPerView: 1,
+    });
+
+
 });
 

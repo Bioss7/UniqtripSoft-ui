@@ -1,0 +1,26 @@
+.banner-company {
+    padding: 145px 0;
+    background: url('../images/banner/banner-company-bg.png') center no-repeat;
+    background-size: cover;
+}
+
+.banner-company__inner {
+    width: 100%;
+    max-width: 865px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-company__title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.banner-company__text {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}

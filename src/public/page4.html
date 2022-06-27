@@ -117,16 +117,17 @@ title: Page 4
         <form class="form form--orange" action="/" method="post">
             <div class="form__inner form__inner--orange">
                 <div class="form__group">
-                    <label for="">E-mail</label>
-                    <input class="form__control" type="text" placeholder="Ваш e-mail">
+                    <label for="email">E-mail</label>
+                    <input class="form__control" id="email" type="text" placeholder="Ваш e-mail">
                 </div>
                 <div class="form__group">
-                    <label for="">Ваше имя</label>
-                    <input class="form__control" type="text" placeholder="Ваш имя">
+                    <label for="name">Ваше имя</label>
+                    <input class="form__control" id="name" type="text" placeholder="Ваш имя">
                 </div>
             </div>
             <div class="form__group form__group--note">
-                <textarea class="form__control form__control--textarea" type="text" placeholder="Напишите нам"></textarea>
+                <label for="" id="message">Сообщение</label>
+                <textarea class="form__control form__control--textarea" id="message" type="text" placeholder="Напишите нам"></textarea>
             </div>
             <div class="form__note">
                 *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>

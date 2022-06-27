@@ -1,5 +1,4 @@
 .title-h2 {
-    margin-bottom: 40px;
     font-weight: 600;
     font-size: 48px;
     line-height: 64px;
@@ -23,7 +22,14 @@
     }
 }
 
+.text-bold {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
 .link-underline {
+    display: inline-block;
     font-size: 36px;
     font-weight: 600;
     line-height: 48px;
@@ -44,3 +50,4 @@
 .text-center {
     text-align: center;
 }
+

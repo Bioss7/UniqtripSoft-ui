@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0 -12.5px;
 
     @include breakpoint($bp-991) {
         padding: 0;
@@ -10,6 +11,7 @@
 
 .advantages__item {
     width: 33.33333%;
+    padding: 0 12.5px;
     margin-bottom: 60px;
     
     @include breakpoint($bp-991) {

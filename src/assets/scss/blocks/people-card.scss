@@ -1,0 +1,25 @@
+.people-card {
+    height: 412px;
+    padding: 20px 24px 24px;
+    background: linear-gradient(133.93deg, #FDA05D 15.61%, #FEBB02 85.11%);
+}
+
+.people-card__img {
+    padding-left: 34px;
+    margin-bottom: 100px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.people-card__name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.people-card__post {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
