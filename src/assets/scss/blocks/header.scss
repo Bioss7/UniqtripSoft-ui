@@ -1,14 +1,25 @@
 .header {
     width: 100%;
+    background: #fcfcfc;
+}
+
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 101;
-    background: #fcfcfc;
+
+    .header__top {
+        box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .header__inner {
-    padding-top: 60px;
+    padding-top: 40px;
+
+    @include breakpoint($bp-991) {
+        padding: 20px 0;
+    }
 }
 
 .header__top {
@@ -41,7 +52,9 @@
     max-width: 215px;
 
     img {
-        width: 100%;
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -119,6 +132,7 @@
 }
 
 .search__input {
+    max-width: 50px;
     padding-right: 5px;
     border: none;
     background: inherit;
@@ -127,6 +141,10 @@
     font-size: 14px;
     line-height: 1.1;
     color: #727272;
+
+    &:focus {
+        max-width: 100%;
+    }
 }
 
 .search__btn {
@@ -142,47 +160,58 @@
     height: 16px;
 }
 
-@include breakpoint($bp-991) {
-    .nav-left-mobile {
-        .nav__list {
-            flex-direction: column;
-            padding: 20px 20px 0;
-            position: fixed;
-            z-index: 101;
-            top: 11%;
-            right: 0;
-            max-width: 300px;
-            width: 100%;
-    
-            background: #f2f2f2;
-    
-            .nav__item {
-                width: 100%;
-                padding: 14px;
-            }
-        }
+@include breakpoint($bp-991) { 
+    .nav-left-mobile,  .nav-bottom-mobile{
+        display: none;
     }
-    
-    .nav-bottom-mobile  {
-        max-width: 300px;
-        width: 100%;
-        height: 100vh;
-        padding: 20px;
-        position: fixed;
-        z-index: 101;
-        top: 30%;
-        right: 0;
-    
-        background: #f2f2f2;
-    
-        .nav .nav__list {
-            flex-direction: column;
-    
-            .nav__item {
-                width: 100%;
-                padding: 14px;
-            }
-        }
+
+    .header__top {
+        border-bottom: none;
+        padding-bottom: 0;
     }
 }
+
+// @include breakpoint($bp-991) {
+//     .nav-left-mobile {
+//         .nav__list {
+//             flex-direction: column;
+//             padding: 20px 20px 0;
+//             position: fixed;
+//             z-index: 101;
+//             top: 11%;
+//             right: 0;
+//             max-width: 300px;
+//             width: 100%;
+    
+//             background: #f2f2f2;
+    
+//             .nav__item {
+//                 width: 100%;
+//                 padding: 14px;
+//             }
+//         }
+//     }
+    
+//     .nav-bottom-mobile  {
+//         max-width: 300px;
+//         width: 100%;
+//         height: 100vh;
+//         padding: 20px;
+//         position: fixed;
+//         z-index: 101;
+//         top: 30%;
+//         right: 0;
+    
+//         background: #f2f2f2;
+    
+//         .nav .nav__list {
+//             flex-direction: column;
+    
+//             .nav__item {
+//                 width: 100%;
+//                 padding: 14px;
+//             }
+//         }
+//     }
+// }
 

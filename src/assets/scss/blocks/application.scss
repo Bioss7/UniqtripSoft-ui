@@ -5,13 +5,8 @@
 .application__title {
     margin-bottom: 50px;
 
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 64px;
-
     @include breakpoint($bp-991) {
         font-size: 36px;
-        font-weight: 600;
         line-height: 48px;
     }
 }
@@ -29,6 +24,12 @@
 .application__item {
     padding: 0 15px;
     width: 50%;
+
+    &--video {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
 
     @include breakpoint($bp-991) {
         width: 100%;
@@ -130,18 +131,4 @@
     }
 }
 
-.application__img {
-    position: relative;
 
-    img {
-        display: block;
-        max-width: 100%;
-        height: 374px;
-
-        @include breakpoint($bp-991) {
-            margin: 0 auto;
-            height: auto;
-        }
-    }
-
-}

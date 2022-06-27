@@ -24,26 +24,11 @@
     }
 }
 
-.container {
-    width: 100%;
-    max-width: 1180px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .section {
     padding: 35px 0;
 
     &--services {
-        padding: 70px 0 45px;
-    }
-
-    &--advantages {
-        padding: 70px 0;
-    }
-
-    &--slider {
-        padding: 70px 0 45px;
+        padding: 70px 0 35px;
     }
 
     &--about-project {
@@ -74,9 +59,5 @@
 
 .section__title {
     margin-bottom: 20px;
-}
-
-.main {
-    padding-top: 160px;
 }
 
