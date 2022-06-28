@@ -6,7 +6,7 @@ title: Page 2
 <!-- Битрикс 24 -->
 <section class="section">
     <div class="container">
-        <div class="title-h2 text-center">Битрикс 24</div>
+        <div class="title-h2 text-center mb-0">Битрикс 24</div>
         <ul class="nav-links">
             <li class="nav-links__item">
                 <a class="nav-links__link" href="#">Онлайн офис</a>
@@ -37,8 +37,11 @@ title: Page 2
                     <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
                 </div>
                 <div class="request__item">
-                    <div class="request__img">
-                        <img src="../assets/images/request/01.png" alt="request-img">
+                    <div class="request__wrapper">
+                        <img class="request__mask" src="/assets/images/mask-img.png" alt="mask">
+                        <div class="request__img">
+                            <img src="/assets/images/request/01.png" alt="request-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,90 +301,130 @@ title: Page 2
     </div>
 </section>
 
-<!-- Slider -->
-<section>
+<!-- Slider Успех наших клиентов -->
+<section class="section" id="success-slider">
     <div class="container">
-        <h2 class="title-h2">Успех наших клиентов</h2>
-        <div class="slider-swiper swiper-container">
-            <div class="slider-swiper__wrapper swiper-wrapper">
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
+         <h2 class="title-h2">
+             Успех наших клиентов
+         </h2>
+         
+         <div class="swiper-container">
+             <div class="slider-buttons">
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-button-next"></div>
+             </div>
+             <div class="js-slider-swiper slider-swiper swiper">
+                 <div class="slider-swiper__wrapper swiper-wrapper">
+                     <div class="slider-swiper__slide swiper-slide">
+                         <div class="success-card">
+                            <div class="success-card__inner">
+                                <img src="/assets/images/success/01.svg" alt="success">
+                                <div class="success-card__title success-card__title--mobile">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
                             </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
+                            <div class="success-card__content">
+                                 <div class="success-card__title">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
+                                 <div class="success-card__subtitle">
+                                     Выполнены следующие работы:
+                                 </div>
+                                 <ul class="success-card__list">
+                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                     <li>Поддерживаемые типы закупок</li>
+                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                 </ul>
+                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
                             </div>
-                            <ul class="success-card__list">
-                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                <li>Поддерживаемые типы закупок</li>
-                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                            </ul>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
+                         </div>
+                     </div>
+                     <div class="slider-swiper__slide swiper-slide">
+                         <div class="success-card">
+                            <div class="success-card__inner">
+                                <img src="/assets/images/success/01.svg" alt="success">
+                                <div class="success-card__title success-card__title--mobile">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
                             </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
+                            <div class="success-card__content">
+                                 <div class="success-card__title">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
+                                 <div class="success-card__subtitle">
+                                     Выполнены следующие работы:
+                                 </div>
+                                 <ul class="success-card__list">
+                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                     <li>Поддерживаемые типы закупок</li>
+                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                 </ul>
+                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
                             </div>
-                            <div class="success-card__list">
-                                <ul>
-                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                    <li>Поддерживаемые типы закупок</li>
-                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                </ul>
+                         </div>
+                     </div>
+                     <div class="slider-swiper__slide swiper-slide">
+                         <div class="success-card">
+                            <div class="success-card__inner">
+                                <img src="/assets/images/success/01.svg" alt="success">
+                                <div class="success-card__title success-card__title--mobile">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
                             </div>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
+                            <div class="success-card__content">
+                                 <div class="success-card__title">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
+                                 <div class="success-card__subtitle">
+                                     Выполнены следующие работы:
+                                 </div>
+                                 <ul class="success-card__list">
+                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                     <li>Поддерживаемые типы закупок</li>
+                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                 </ul>
+                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
                             </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
+                         </div>
+                     </div>
+                     <div class="slider-swiper__slide swiper-slide">
+                         <div class="success-card">
+                            <div class="success-card__inner">
+                                <img src="/assets/images/success/01.svg" alt="success">
+                                <div class="success-card__title success-card__title--mobile">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
                             </div>
-                            <div class="success-card__list">
-                                <ul>
-                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                    <li>Поддерживаемые типы закупок</li>
-                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                </ul>
+                            <div class="success-card__content">
+                                 <div class="success-card__title">
+                                     <a href="#">Visit-sochi.com</a>
+                                 </div>
+                                 <div class="success-card__subtitle">
+                                     Выполнены следующие работы:
+                                 </div>
+                                 <ul class="success-card__list">
+                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                     <li>Поддерживаемые типы закупок</li>
+                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                 </ul>
+                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
                             </div>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br class="mb-5">
+                         </div>
+                     </div>
+                 </div>
+                 <div class="swiper-pagination"></div>
+             </div>
+         </div>
     </div>
-</section>
+ </section>
 
 <!-- Пакеты на подключение -->
 <section class="section">

@@ -5,6 +5,10 @@
     line-height: 64px;
     color: #2c3136;
 
+    &--indent {
+        margin-bottom: 40px;
+    }
+
     @include breakpoint($bp-991) {
         margin-bottom: 30px;
         font-size: 36px;
@@ -52,5 +56,6 @@
 .text-center {
     text-align: center;
 }
+
 
 
