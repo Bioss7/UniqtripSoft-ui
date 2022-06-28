@@ -5,25 +5,23 @@ title: Page 1
 
 <!-- intro-application -->
 <div class="container">
-    <div class="js-intro-slider intro-slider">
-        <div class="intro-slider__wrapper swiper-container">
-            <div class="intro-slider__slide">
+    <div class="js-intro-slider intro-slider swiper">
+        <div class="intro-slider__wrapper swiper-wrapper">
+            <div class="intro-slider__slide swiper-slide">
                 <div class="intro-application">
                     <div class="intro-application__inner">
                         <div class="intro-application__content">
                             <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии Битрикс24</h1>
-                            <button class="btn btn--white" type="button">Оставить заявку</button>
                             <a class="btn btn--white" type="button" href="#">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="intro-slider__slide">
+            <div class="intro-slider__slide swiper-slide">
                 <div class="intro-application">
                     <div class="intro-application__inner">
                         <div class="intro-application__content">
                             <h1 class="intro-application__title">Бесплатно внедряем Битрикс24 при покупке лицензии Битрикс24</h1>
-                            <button class="btn btn--white" type="button">Оставить заявку</button>
                             <a class="btn btn--white" type="button" href="#">Оставить заявку</a>
                         </div>
                     </div>
@@ -152,7 +150,7 @@ title: Page 1
 <!-- Наши преимущества -->
 <section class="section" id="advantages">
     <div class="container">
-        <div class="title-h2 indent-1">
+        <div class="title-h2">
             Наши преимущества
         </div>
         <div class="advantages">
@@ -213,86 +211,126 @@ title: Page 1
 <!-- Slider Успех наших клиентов -->
 <section class="section" id="success-slider">
    <div class="container">
-        <h2 class="title-h2 title-h2">
+        <h2 class="title-h2">
             Успех наших клиентов
         </h2>
-        <div class="slider-swiper swiper-container">
-            <div class="slider-swiper__wrapper swiper-wrapper">
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
-                            </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
-                            </div>
-                            <ul class="success-card__list">
-                                <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                <li>Поддерживаемые типы закупок</li>
-                                <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                            </ul>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
-                    </div>
-                </div>
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
-                            </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
-                            </div>
-                            <div class="success-card__list">
-                                <ul>
+        
+        <div class="swiper-container">
+            <div class="slider-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="js-slider-swiper slider-swiper swiper">
+                <div class="slider-swiper__wrapper swiper-wrapper">
+                    <div class="slider-swiper__slide swiper-slide">
+                        <div class="success-card">
+                           <div class="success-card__inner">
+                               <img src="/assets/images/success/01.svg" alt="success">
+                               <div class="success-card__title success-card__title--mobile">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                           </div>
+                           <div class="success-card__content">
+                                <div class="success-card__title">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                                <div class="success-card__subtitle">
+                                    Выполнены следующие работы:
+                                </div>
+                                <ul class="success-card__list">
                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
                                     <li>Поддерживаемые типы закупок</li>
                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
                                 </ul>
-                            </div>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
+                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                           </div>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-swiper__slide swiper-slide">
-                    <div class="success-card">
-                       <div class="success-card__img">
-                           <img src="../assets/images/success/01.svg" alt="success">
-                       </div>
-                       <div class="success-card__content">
-                            <div class="success-card__title">
-                                <a href="#">Visit-sochi.com</a>
-                            </div>
-                            <div class="success-card__subtitle">
-                                Выполнены следующие работы:
-                            </div>
-                            <div class="success-card__list">
-                                <ul>
+                    <div class="slider-swiper__slide swiper-slide">
+                        <div class="success-card">
+                           <div class="success-card__inner">
+                               <img src="/assets/images/success/01.svg" alt="success">
+                               <div class="success-card__title success-card__title--mobile">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                           </div>
+                           <div class="success-card__content">
+                                <div class="success-card__title">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                                <div class="success-card__subtitle">
+                                    Выполнены следующие работы:
+                                </div>
+                                <ul class="success-card__list">
                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
                                     <li>Поддерживаемые типы закупок</li>
                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
                                 </ul>
-                            </div>
-                            <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                       </div>
+                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="slider-swiper__slide swiper-slide">
+                        <div class="success-card">
+                           <div class="success-card__inner">
+                               <img src="/assets/images/success/01.svg" alt="success">
+                               <div class="success-card__title success-card__title--mobile">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                           </div>
+                           <div class="success-card__content">
+                                <div class="success-card__title">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                                <div class="success-card__subtitle">
+                                    Выполнены следующие работы:
+                                </div>
+                                <ul class="success-card__list">
+                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                    <li>Поддерживаемые типы закупок</li>
+                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                </ul>
+                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="slider-swiper__slide swiper-slide">
+                        <div class="success-card">
+                           <div class="success-card__inner">
+                               <img src="/assets/images/success/01.svg" alt="success">
+                               <div class="success-card__title success-card__title--mobile">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                           </div>
+                           <div class="success-card__content">
+                                <div class="success-card__title">
+                                    <a href="#">Visit-sochi.com</a>
+                                </div>
+                                <div class="success-card__subtitle">
+                                    Выполнены следующие работы:
+                                </div>
+                                <ul class="success-card__list">
+                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                    <li>Поддерживаемые типы закупок</li>
+                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                </ul>
+                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                           </div>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
+       
    </div>
 </section>
 
@@ -334,7 +372,7 @@ title: Page 1
                     <img src="/assets/images/mask-img.png" alt="">
                     <div class="application__video">
                         <div class="embed">
-                            <iframe src="https://www.youtube.com/embed/KkQCjfT30iM?autoplay=0&controls=1&loop=0&mute=0&rel=0&start=0&html5=1&enablejsapi=1&origin=https://uniqtripsoft.ru" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/KkQCjfT30iM" title="Битрикс24: Управление остатками - Знакомство с базовым функционалом" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -344,7 +382,7 @@ title: Page 1
 </section>
 
 <!-- Feedback -->
-<section class="section" id="section">
+<section class="section section--feedback" id="section">
     <div class="container">
         <div class="feedback">
             <div class="feedback__inner">
@@ -375,14 +413,14 @@ title: Page 1
                         <div class="feedback__address feedback__address--map">
                             Отдел продаж: г. Сочи, Триумфальный проезд,1 , офис 2-021
                         </div>
-                        <div class="feedback__map" style="background-image: url('/assets/images/feedback/mask-map.png');">
+                        <div class="feedback__map" id="js-map">
 
                         </div>
                     </div>
                 </div>
                 <div class="feedback__item">
                     <div class="feedback__title title-h2">
-                        Связаться
+                        Вы можете нам написать
                     </div>
                     <div class="feedback__text feedback__text--forms">
                         Мы всегда ищем следующий отличный проект.
@@ -402,7 +440,7 @@ title: Page 1
                                 <div class="form__group form__group--feedback-input">
                                     <input class="form__control" type="text" placeholder="Имя">
                                 </div>
-                                <div class="form__group">
+                                <div class="form__group form__group--feedback-btn">
                                     <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
                                 </div>
                             </div>

@@ -28,7 +28,7 @@
     padding: 35px 0;
 
     &--services {
-        padding: 70px 0 35px;
+        padding: 70px 0 0;
     }
 
     &--about-project {
@@ -44,9 +44,13 @@
         padding: 85px 0 77px;
     }
 
+    &--feedback {
+        padding: 35px 0 45px;
+    }
+
 
     @include breakpoint($bp-991) {
-        padding: 50px 0;
+        padding: 25px 0;
     }
 }
 

@@ -6,6 +6,7 @@
     color: #2c3136;
 
     @include breakpoint($bp-991) {
+        margin-bottom: 30px;
         font-size: 36px;
         line-height: 48px;
     }

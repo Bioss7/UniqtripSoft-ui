@@ -26,6 +26,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 16px;
+    }
 }
 
 .contacts-icon {

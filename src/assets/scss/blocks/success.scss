@@ -8,15 +8,32 @@
     border-radius: 16px;
 
     color: #2b2e3f;
+
+    @include breakpoint($bp-991) {
+        flex-direction: column;
+        padding: 27px 25px 37px;
+    }
 }
 
-.success-card__img {
+.success-card__inner {
     padding-right: 75px;
 
     img {
         display: block;
         max-width: 100%;
         height: auto;
+
+        @include breakpoint($bp-575) { 
+            height: 80px;
+        }
+    }
+
+    @include breakpoint($bp-991) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 0;
+        margin-bottom: 16px;
     }
 }
 
@@ -39,6 +56,21 @@
             text-decoration: none;
         }
     }
+
+    &--mobile {
+        display: none;
+    }
+
+    @include breakpoint($bp-991) {
+        display: none;
+
+        font-size: 24px;
+        line-height: 32px;
+
+        &--mobile {
+            display: block;
+        }
+    }
 }
 
 .success-card__subtitle {
@@ -46,6 +78,10 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 27px;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 5px;
+    }
 }
 
 .success-card__list {

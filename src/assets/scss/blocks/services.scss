@@ -31,7 +31,7 @@
 .services__img {
     img {
         display: block;
-        max-width: 380px;
+        max-width: 100%;
         width: 100%;
         height: auto;
 
@@ -50,7 +50,7 @@
 }
 
 .services__title {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;

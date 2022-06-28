@@ -6,7 +6,7 @@
     background-size: cover;
     text-align: left;
 
-    @include breakpoint($bp-575) {
+    @include breakpoint($bp-991) {
         height: 380px;
     }
 }
@@ -17,13 +17,14 @@
     width: 100%;
     max-width: 980px;
 
-    @include breakpoint($bp-575) {
+    @include breakpoint($bp-991) {
         padding-top: 45px;
     }
 }
 
 .intro-application__content {
     max-width: 720px;
+    padding: 10px;
 
     @include breakpoint(1045px) {
         padding: 0 20px;
@@ -38,6 +39,10 @@
     font-weight: 600;
     line-height: 56px;
     color: #fff;
+
+    @include breakpoint($bp-991) { 
+        font-size: 36px;
+    }
 
     @include breakpoint($bp-575) {
         font-size: 24px;

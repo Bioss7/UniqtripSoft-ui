@@ -1,7 +1,91 @@
-.slider-swiper {
-    
+.swiper-container {
+    position: relative;
 }
 
+.slider-swiper {
+    max-width: 1000px;
+    padding: 10px;
+}
+
+.slider-swiper .swiper-pagination-bullet {
+    margin: 0 7.5px !important;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    background-color: #dde0e4;
+    transition: all .2s ease-out;
+
+    &.swiper-pagination-bullet-active {
+        width: 45px;
+        height: 15px;
+        line-height: 15px;
+        font-size: 14px;
+        background-color: #0071c2;
+        border-radius: 50px;
+    }
+}
+
+.slider-swiper .swiper-pagination {
+    padding: 24px;
+    position: static;
+
+    @include breakpoint($bp-991) { 
+        padding: 20px;
+    }
+
+}
+
+.slider-buttons {
+
+    @include breakpoint($bp-991) {
+        display: none;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+    background-color: #0071c2;
+    border: none;
+    background-image: url('/assets/images/arrow-white-prev.svg');
+
+    &.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        background-image: url('/assets/images/arrow-grey-prev.svg');
+        background-color: transparent;
+        border: 1px solid #bdbdbd;
+        opacity: 1;
+    }
+}
+
+.swiper-button-next {
+    box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+    background-color: #0071c2;
+    border: none;
+    background-image: url('/assets/images/arrow-white-next.svg');
+
+    &.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+        background-image: url('/assets/images/arrow-grey-next.svg');
+        background-color: transparent;
+        border: 1px solid #bdbdbd;
+        opacity: 1;
+    }
+}
 
 /* final-design-slider */
 .final-design-slider {

@@ -27,6 +27,10 @@
 
 .feedback__title {
     margin-bottom: 12px;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 10px;
+    }
 }
 
 .feedback__text {
@@ -37,10 +41,18 @@
 
     &--contact {
         margin-bottom: 33px;
+
+        @include breakpoint($bp-991) {
+            margin-bottom: 20px;
+        }
     }
 
     &--forms {
         margin-bottom: 35px;
+
+        @include breakpoint($bp-991) {
+            margin-bottom: 20px;
+        }
     }
 
     &--map {
@@ -68,6 +80,14 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 11px;
+
+        &--map {
+            margin-bottom: 25px;
+        }
     }
 }
 

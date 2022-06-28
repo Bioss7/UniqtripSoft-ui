@@ -54,6 +54,62 @@ title: UI KIT
     </div>
 </section>
 
+<!-- form--feedback -->
+<section class="section">
+    <div class="container">
+        <form class="form form--feedback" action="/" method="post">
+            <div class="form__group">
+                <label for="">E-mail</label>
+                <input class="form__control" type="text" placeholder="Ваш e-mail">
+            </div>
+            <div class="form__group">
+                <label for="">Cообщение</label>
+                <textarea class="form__control form__control--textarea" type="text" placeholder="Напишите нам"></textarea>
+            </div>
+            <div class="form__group">
+                <label for="">Ваше имя</label>
+                <div class="form__inner form__inner--feedback">
+                    <div class="form__group form__group--feedback-input">
+                        <input class="form__control" type="text" placeholder="Имя">
+                    </div>
+                    <div class="form__group">
+                        <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- form--orange -->
+<section class="section">
+    <div class="container">
+        <form class="form form--orange" action="/" method="post">
+            <div class="form__inner form__inner--orange">
+                <div class="form__group">
+                    <label for="">E-mail</label>
+                    <input class="form__control" type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="form__group">
+                    <label for="">Ваше имя</label>
+                    <input class="form__control" type="text" placeholder="Ваш имя">
+                </div>
+            </div>
+            <div class="form__group form__group--note">
+                <label for="">Выберите нужный вам пакет внедрения </label>
+                <div class="js-select"></div>
+            </div>
+            <div class="form__note">
+                *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
+            </div>
+           
+            <div class="form__group form__group--btn">
+                <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 <!-- Slider -->
 <section>
     <div class="container">
@@ -134,30 +190,13 @@ title: UI KIT
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <br class="mb-5">
     </div>
 </section>
 
-<!-- script -->
-<script>
-    document.addEventListener("DOMContentLoaded", function(){
-    const select = new SelectUI('#select-ui', {
-            placeholder: 'Выберите элемент',
-            // selectedId: '2',
-            data: [
-                {id: '1', value: 'По популярности'},
-                {id: '2', value: 'По возрастанию цены'},
-                {id: '3', value: 'По возрастанию цены'},
-                {id: '4', value: 'По возрастанию цены'},
-                {id: '5', value: 'По возрастанию цены'},
-                {id: '6', value: 'По возрастанию цены'},
-                {id: '7', value: 'По возрастанию цены'},
-                {id: '8', value: 'По возрастанию цены'},
-            ],
-                onSelect(item){
-                // console.log('selected Item', item)
-            }
-        });
-    })
-</script>
+<div style="padding: 100px"></div>
+
