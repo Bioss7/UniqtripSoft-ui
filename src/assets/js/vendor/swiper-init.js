@@ -12,14 +12,48 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.js-btn-next',
+            prevEl: '.js-btn-prev'
         },
     });
 
-    // new Swiper('.js-final-design-slider', {
-    //     slidesPerView: 1,
-    // });
+    const swiperMobile = new Swiper('.js-slider-swiper-mobile', {
+        slidesPerView: 3,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        slideToClickedSlide: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.js-btn-next-mobile',
+            prevEl: '.js-btn-prev-mobile'
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                slidesPerView: 'auto',
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            }
+        },
+    });
+
+    new Swiper('.js-slider-swiper-project', {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+    });
 
     let introSlider = new Swiper('.js-intro-slider', {
         slidesPerView: 1,

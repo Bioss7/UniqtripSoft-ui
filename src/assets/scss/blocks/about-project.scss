@@ -28,14 +28,14 @@
     margin-bottom: 25px;
 }
 
-.about-project__text {
-    margin-bottom: 70px;
-}
-
 .about-project-sliders {
 
 }
 
 .about-project-sliders__title  {
     margin-bottom: 55px;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 20px;
+    }
 }

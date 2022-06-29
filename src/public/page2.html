@@ -6,24 +6,26 @@ title: Page 2
 <!-- Битрикс 24 -->
 <section class="section">
     <div class="container">
-        <div class="title-h2 text-center mb-0">Битрикс 24</div>
-        <ul class="nav-links">
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Онлайн офис</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link nav-links__link--active" href="#">CRM</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Контакт центры</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Сайты и магазины</a>
-            </li>
-            <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Автоматизации</a>
-            </li>
-        </ul>
+        <div class="title-h2 title-h2--main">Битрикс 24</div>
+        <div class="nav-links">
+            <ul class="nav-links__inner">
+                <li class="nav-links__item">
+                    <a class="nav-links__link" href="#">Онлайн офис</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav-links__link nav-links__link--active" href="#">CRM</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav-links__link" href="#">Контакт центры</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav-links__link" href="#">Сайты и магазины</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav-links__link" href="#">Автоматизации</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="request">
             <div class="request__inner">
@@ -31,7 +33,7 @@ title: Page 2
                     <div class="request__text">
                         В CRM вы работаете с клиентами: открытые линии, лиды и сделки, счета и оплаты, каналы продаж
                         Контакт - центр позволяет объединять все каналы общения с клиентами
-                        NEW CRM - маркетинг позволяет легко работать с большой клиентской базой
+                        NEW CRM - маркетинг позволяет легко работать с большой клиентской Базовый
                         CRM-аналитика контролирует эффективность ваших менеджеров.
                     </div>
                     <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
@@ -215,7 +217,7 @@ title: Page 2
 </section>
 
 <!-- Этапы проведения работ -->
-<section class="section">
+<section class="section section--stages-work">
     <div class="container">
         <div class="title-h2">Этапы проведения работ</div>
         <div class="stages-work">
@@ -424,10 +426,10 @@ title: Page 2
              </div>
          </div>
     </div>
- </section>
+</section>
 
 <!-- Пакеты на подключение -->
-<section class="section">
+<section class="section section--package" id="package">
     <div class="container">
         <h2 class="title-h2">Пакеты на подключение</h2>
         <div class="package">
@@ -488,8 +490,8 @@ title: Page 2
     </div>
 </section>
 
-<!-- Заказать пакет внедрения -->
-<section class="section">
+<!-- Форма Заказать пакет внедрения -->
+<section class="section section--form">
     <div class="container">
         <h2 class="title-h2">Заказать пакет внедрения</h2>
         <form class="form form--orange" action="/" method="post">
@@ -518,25 +520,3 @@ title: Page 2
     </div>
 </section>
 
-<!-- script -->
-<script>
-    document.addEventListener("DOMContentLoaded", function(){
-    const select = new SelectUI('.js-select', {
-            placeholder: 'Выберите элемент',
-            // selectedId: '2',
-            data: [
-                {id: '1', value: 'По популярности'},
-                {id: '2', value: 'По возрастанию цены'},
-                {id: '3', value: 'По возрастанию цены'},
-                {id: '4', value: 'По возрастанию цены'},
-                {id: '5', value: 'По возрастанию цены'},
-                {id: '6', value: 'По возрастанию цены'},
-                {id: '7', value: 'По возрастанию цены'},
-                {id: '8', value: 'По возрастанию цены'},
-            ],
-                onSelect(item){
-                // console.log('selected Item', item)
-            }
-        });
-    })
-</script>

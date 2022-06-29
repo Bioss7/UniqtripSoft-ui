@@ -30,32 +30,46 @@ title: Page 5
 <section class="section section--about-project-sliders">
     <div class="container">
         <div class="about-project-sliders">
-            <h2 class="about-project-sliders__title title-h2">Итоговый дизайн</h2>
-            <div class="js-final-design-slider final-design-slider swiper-container">
-                <div class="final-design-slider__wrapper swiper-wrapper">
-                    <div class="final-design-slider__slide">
-                        <img class="final-design-slider__img" src="/assets/images/slides-about-project/slide-final-design_01.png" alt="">
+            <div class="swiper-container">
+                <h2 class="about-project-sliders__title title-h2">Итоговый дизайн</h2>
+                <div class="slider-buttons slider-buttons--final-design">
+                    <div class="swiper-button-prev js-btn-prev"></div>
+                    <div class="swiper-button-next js-btn-next"></div>
+                </div>
+                <div class="js-slider-swiper slider-swiper swiper">
+                    <div class="slider-swiper__wrapper swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="slider-swiper-img" src="/assets/images/slides-about-project/slide-final-design_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-swiper-img" src="/assets/images/slides-about-project/slide-final-design_02.png" alt="">
+                        </div>
                     </div>
-                    <div class="final-design-slider__slide">
-                        <img class="final-design-slider__img" src="/assets/images/slides-about-project/slide-final-design_02.png" alt="">
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <h2 class="about-project-sliders__title title-h2">Мобильная адаптация</h2>
-            <div class="js-mobile-adaptation-slider mobile-adaptation-slider swiper-container">
-                <div class="mobile-adaptation-slider__wrapper swiper-wrapper">
-                    <div class="mobile-adaptation-slider__slide">
-                        <img class="mobile-adaptation-slider__img" src="/assets/images/slides-about-project/mobile-adaptation_01.png" alt="">
+            <div class="swiper-container">
+                <div class="slider-buttons">
+                    <div class="swiper-button-prev js-btn-prev-mobile"></div>
+                    <div class="swiper-button-next js-btn-next-mobile"></div>
+                </div>
+                <div class="js-slider-swiper-mobile slider-swiper swiper">
+                    <div class="slider-swiper__wrapper swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--mobile">
+                            <img class="slider-swiper-img" src="/assets/images/slides-about-project/01.png" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide--mobile">
+                            <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide--mobile">
+                            <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide--mobile">
+                            <img class="slider-swiper-img" src="/assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
+                        </div>
                     </div>
-                    <div class="mobile-adaptation-slider__slide">
-                        <img class="mobile-adaptation-slider__img" src="/assets/images/slides-about-project/mobile-adaptation_02.png" alt="">
-                    </div>
-                    <div class="mobile-adaptation-slider__slide">
-                        <img class="mobile-adaptation-slider__img" src="/assets/images/slides-about-project/mobile-adaptation_03.png" alt="">
-                    </div>
-                    <div class="mobile-adaptation-slider__slide">
-                        <img class="mobile-adaptation-slider__img" src="/assets/images/slides-about-project/mobile-adaptation_04.png" alt="">
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -97,10 +111,10 @@ title: Page 5
 <div class="section section--other-projects-slider">
     <div class="container">
         <h2 class="title-h2">Другие проекты</h2>
-        <div class="other-projects-slider swiper-container">
-            <div class="other-projects-slider__wrapper swiper-wrapper">
-                <div class="other-projects-slider__slide">
-                    <div class="projects__card" style="background: url('../assets/images/project/01.png');">
+        <div class="js-slider-swiper-project slider-swiper slider-swiper--project swiper">
+            <div class="slider-swiper__wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="projects__card" style="background-image: url('/assets/images/project/01.png');">
                         <div class="projects__content">
                             <div class="projects__title">
                                 Visit-sochi.com
@@ -111,8 +125,20 @@ title: Page 5
                         </div>
                     </div>
                 </div>
-                <div class="other-projects-slider__slide">
-                    <div class="projects__card" style="background: url('../assets/images/project/02.png');">
+                <div class="swiper-slide">
+                    <div class="projects__card" style="background-image: url('/assets/images/project/02.png');">
+                        <div class="projects__content">
+                            <div class="projects__title">
+                                Visit-sochi.com
+                            </div>
+                            <div class="projects__text">
+                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects__card" style="background-image: url('/assets/images/project/02.png');">
                         <div class="projects__content">
                             <div class="projects__title">
                                 Visit-sochi.com
@@ -124,6 +150,9 @@ title: Page 5
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>

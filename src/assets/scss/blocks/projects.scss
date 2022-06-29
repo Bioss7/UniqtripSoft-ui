@@ -11,6 +11,14 @@
     width: 50%;
     padding: 0 10px;
     margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-991) {
+        width: 100%;
+    }
 }
 
 .projects__card {
@@ -28,6 +36,11 @@
     &:hover  {
         & .projects__content{
             transform: translateY(0%);
+
+            .projects__text {
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 
@@ -41,6 +54,10 @@
         left: 0;
         z-index: -1;
     }
+
+    @include breakpoint($bp-767) { 
+        height: 217px;
+    }
 }
 
 .projects__content {
@@ -51,21 +68,48 @@
     padding: 26px;
     color: #fff;
     
-    transform: translateY(32%);
+    transform: translateY(25%);
 
     transition: all .5s ease-in-out;
+
+    @include breakpoint($bp-767) {
+        transform: translateY(45%);
+    }
+
+    @include breakpoint(375px) {
+        transform: translateY(65%);
+    }
 }
 
 .projects__title {
-    height: 63px;
-    margin-bottom: 11px;
     font-size: 28px;
     font-weight: 700;
     line-height: 37px;
+
+    @include breakpoint($bp-991) { 
+        margin-bottom: 20px;
+    }
+
+    @include breakpoint($bp-767) { 
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
 }
 
 .projects__text {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s linear;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+
+    @include breakpoint($bp-767) { 
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
 }

@@ -1,16 +1,28 @@
 .stages-work {
     display: flex;
     flex-wrap: wrap;
-    padding: 45px 0 45px;
 }
 
 .stages-work__item {
     max-width: 468px;
     width: 100%;
 
+    @include breakpoint($bp-767) {
+        margin-bottom: 30px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     &:nth-child(2n) {
         padding-top: 170px;
         margin-left: 132px;
+
+        @include breakpoint($bp-767) {
+            padding-top: 20px;
+            margin-left: 0;
+        }
     }
 
 }
@@ -56,6 +68,10 @@
         opacity: 0.08;
         z-index: -1;
         position: absolute;
+    }
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 20px;
     }
 }
 

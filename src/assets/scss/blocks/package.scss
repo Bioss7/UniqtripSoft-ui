@@ -1,16 +1,38 @@
 .package {
-    padding: 40px 0 90px;
+    
 }
 
 .package__inner {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -10px;
     margin-bottom: 24px;
+
+    @include breakpoint(1200px) { 
+        justify-content: space-around;
+    }
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 20px;
+    }
 }
 
 .package__item {
     padding: 0 10px;
     width: 33.33333%;
+
+    @include breakpoint(1200px) {
+        width: 50%;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include breakpoint($bp-767) {
+        width: 100%;
+    }
 }
 
 .package__card {
@@ -42,6 +64,10 @@
             margin: 30px auto;
             background: #fff;
         }
+    }
+
+    @include breakpoint($bp-991) {
+        padding: 50px 20px 60px;
     }
 }
 
@@ -88,6 +114,11 @@
         height: 1px;
         margin: 30px auto;
         background: #4f4f4f;
+    }
+
+    @include breakpoint($bp-991) {
+        font-size: 16px;
+        line-height: 21px;
     }
 }
 

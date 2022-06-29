@@ -1,5 +1,5 @@
 .request {
-    padding: 70px 30px 70px 67px;
+    padding: 50px 30px 70px 67px;
 
     position: relative;
 
@@ -16,11 +16,19 @@
         box-shadow: 0px 0px 15px 0px #7b7b7b;
         opacity: 0.3;
     }
+
+    @include breakpoint($bp-991) {
+        padding: 30px 16px;
+    }
 }
 
 .request__inner {
     display: flex;
     margin: 0 -15px;
+
+    @include breakpoint($bp-991) {
+        flex-direction: column;
+    }
 }
 
 .request__title {
@@ -34,6 +42,10 @@
 .request__item {
     width: 50%;
     padding: 0 15px;
+
+    @include breakpoint($bp-991) {
+        width: 100%;
+    }
 }
 
 .request__wrapper {
@@ -55,10 +67,22 @@
 }
 
 .request__text {
+    padding-top: 30px;
+    max-width: 480px;
     margin-bottom: 36px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
+
+    &--pt-0 {
+        padding-top: 0px;
+    }
+
+    @include breakpoint($bp-991) {
+        max-width: 100%;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .request__img {
@@ -76,4 +100,12 @@
 .request__btn {
     height: 54px;
     line-height: 27px;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint($bp-767) {
+        width: 100%;
+    }
 }

@@ -5,15 +5,29 @@
     line-height: 64px;
     color: #2c3136;
 
-    &--indent {
-        margin-bottom: 40px;
-    }
+    &--main {
+        text-align: center;
+        margin-bottom: 0;
 
+        @include breakpoint($bp-991) {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    }
+   
     @include breakpoint($bp-991) {
         margin-bottom: 30px;
         font-size: 36px;
         line-height: 48px;
     }
+
+    &--mobile {
+        @include breakpoint($bp-991) {
+            font-size: 30px;
+            line-height: 42px;
+        }
+    }
+
 }
 
 .text {
@@ -40,6 +54,7 @@
     font-weight: 600;
     line-height: 48px;
     text-decoration: underline;
+    color: #2b2e3f;
 
     &:hover {
         color: #0071c2;
@@ -55,6 +70,12 @@
 
 .text-center {
     text-align: center;
+}
+
+.text-lg-left {
+    @include breakpoint($bp-991) {
+        text-align: left;
+    }
 }
 
 

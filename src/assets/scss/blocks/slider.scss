@@ -5,6 +5,19 @@
 .slider-swiper {
     max-width: 1000px;
     padding: 10px;
+
+    &--project {
+        max-width: unset;
+        padding: 0;
+    }
+}
+
+.swiper-slide {
+    @include breakpoint($bp-991) {
+        &--mobile {
+            width: auto;
+        }
+    }
 }
 
 .slider-swiper .swiper-pagination-bullet {
@@ -38,8 +51,15 @@
 
 .slider-buttons {
 
-    @include breakpoint($bp-991) {
+    @include breakpoint(1400px) {
         display: none;
+    }
+
+    &--final-design {
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: 60%;
+        }
     }
 }
 
@@ -87,32 +107,15 @@
     }
 }
 
+.slider-swiper-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* final-design-slider */
-.final-design-slider {
+.slider-swiper-final-design {
     margin-bottom: 77px;
-}
-
-.swiper-container {
-
-}
-
-.final-design-slider__wrapper {
-
-}
-
-.swiper-wrapper {
-
-}
-
-.final-design-slider__slide {
-    max-width: 980px;
-    width: 100%;
-}
-
-.final-design-slider__img {
-    // display: block;
-    // width: 100%;
-    // max-width: 100%;
 }
 
 /* people-slider */
