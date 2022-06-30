@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    new Swiper('.js-slider-swiper-project', {
+    const swiperProject = new Swiper('.js-slider-swiper-project', {
         slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
@@ -53,10 +53,37 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'bullets',
             clickable: true,
         },
+        navigation: {
+            nextEl: '.js-arrow-prev',
+            prevEl: '.js-arrow-next'
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 2,
+            }
+        },
     });
 
-    let introSlider = new Swiper('.js-intro-slider', {
+    const swiperIntro = new Swiper('.js-intro-slider', {
         slidesPerView: 1,
+    });
+
+    const swipperPeople = new Swiper('.js-slider-swiper-people', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.js-btn-next',
+            prevEl: '.js-btn-prev'
+        },
     });
 
 

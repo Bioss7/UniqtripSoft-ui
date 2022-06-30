@@ -18,11 +18,9 @@ function showSidebar() {
     page.appendChild(mask);
 
     body.classList.add('show-sidebar');
-    sidebar.classList.add('sidebar');
 }
 
 function closeSidebar() {
     body.classList.remove('show-sidebar');
     document.querySelector('.page__mask').remove();
-    sidebar.classList.remove('sidebar');
 }

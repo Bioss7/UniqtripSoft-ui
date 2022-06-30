@@ -3,7 +3,7 @@ layout: default
 title: Page 6
 ---
 
-<div class="container">
+<div class="container container--mobile">
     <div class="banner-company">
         <div class="container">
             <div class="banner-company__inner">
@@ -26,11 +26,11 @@ title: Page 6
     </div>
 </section>
 
-<section class="section">
+<section class="section section--values">
     <div class="container">
         <div class="section__header">
-            <h2 class="section__title title-h2">Наши ценности</h2>
-            <div class="section__text text">
+            <h2 class="section__title">Наши ценности</h2>
+            <div class="section__text">
                 Нашей целью является повышение эффективности бизнеса клиента за счет использования передовых технологий, экспертности и опыта работников компании.
             </div>
         </div>
@@ -93,49 +93,99 @@ title: Page 6
     <div class="container">
         <div class="people">
             <div class="people__inner">
-                <h2 class="title-h2">Люди - это самый ценный актив нашей компании</h2>
+                <div class="people__item people__item--text">
+                    <h2 class="title">Люди - это самый ценный актив нашей компании</h2>
+                </div>
+                <div class="people__item">
+                    <div class="slider-buttons slider-buttons--people">
+                        <div class="js-btn-prev swiper-button-prev"></div>
+                        <div class="js-btn-next swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
-            <div class="people-slider swiper-container">
-                <div class="people-slider__wrapper swiper-wrapper">
-                    <div class="people-slider__slide">
-                        <div class="people-card">
-                            <div class="people-card__img">
-                                <img src="/assets/images/people/01.png" alt="Люди">
+            <div class="swiper-container">
+                <div class="js-slider-swiper-people slider-swiper swiper slider-swiper--people">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--people">
+                            <div class="people-card">
+                                <div class="people-card__img">
+                                    <img src="/assets/images/people/01.png" alt="Люди">
+                                </div>
+                                <div class="people-card__name">
+                                    Сергей
+                                </div>
+                                <div class="people-card__post">
+                                    Генеральный директор
+                                </div>
                             </div>
-                            <div class="people-card__name">
-                                Сергей
+                        </div>
+                        <div class="swiper-slide swiper-slide--people">
+                            <div class="people-card">
+                                <div class="people-card__img">
+                                    <img src="/assets/images/people/01.png" alt="Люди">
+                                </div>
+                                <div class="people-card__name">
+                                    Сергей
+                                </div>
+                                <div class="people-card__post">
+                                    Генеральный директор
+                                </div>
                             </div>
-                            <div class="people-card__post">
-                                Генеральный директор
+                        </div>
+                        <div class="swiper-slide swiper-slide--people">
+                            <div class="people-card">
+                                <div class="people-card__img">
+                                    <img src="/assets/images/people/01.png" alt="Люди">
+                                </div>
+                                <div class="people-card__name">
+                                    Сергей
+                                </div>
+                                <div class="people-card__post">
+                                    Генеральный директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--people">
+                            <div class="people-card">
+                                <div class="people-card__img">
+                                    <img src="/assets/images/people/01.png" alt="Люди">
+                                </div>
+                                <div class="people-card__name">
+                                    Сергей
+                                </div>
+                                <div class="people-card__post">
+                                    Генеральный директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--people">
+                            <div class="people-card">
+                                <div class="people-card__img">
+                                    <img src="/assets/images/people/01.png" alt="Люди">
+                                </div>
+                                <div class="people-card__name">
+                                    Сергей
+                                </div>
+                                <div class="people-card__post">
+                                    Генеральный директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--people">
+                            <div class="people-card">
+                                <div class="people-card__img">
+                                    <img src="/assets/images/people/01.png" alt="Люди">
+                                </div>
+                                <div class="people-card__name">
+                                    Сергей
+                                </div>
+                                <div class="people-card__post">
+                                    Генеральный директор
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="people-slider__slide">
-                        <div class="people-card">
-                            <div class="people-card__img">
-                                <img src="/assets/images/people/01.png" alt="Люди">
-                            </div>
-                            <div class="people-card__name">
-                                Сергей
-                            </div>
-                            <div class="people-card__post">
-                                Генеральный директор
-                            </div>
-                        </div>
-                    </div>
-                    <div class="people-slider__slide">
-                        <div class="people-card">
-                            <div class="people-card__img">
-                                <img src="/assets/images/people/01.png" alt="Люди">
-                            </div>
-                            <div class="people-card__name">
-                                Сергей
-                            </div>
-                            <div class="people-card__post">
-                                Генеральный директор
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <div class="people__btn">
@@ -145,11 +195,11 @@ title: Page 6
     </div>
 </section>
 
-<section class="section">
+<section class="section section--experience">
     <div class="container">
         <div class="section__header">
-            <h2 class="section__title title-h2">Опыт</h2>
-            <div class="section__text text">
+            <h2 class="section__title">Опыт</h2>
+            <div class="section__text section__text--experience">
                 Uniqtrip soft на рынке с 2013 года. За 9 лет работы наши специалисты выполнили множество проектов различных масштабов, направленности и уровня сложности. Среди клиентов, выбравших нас, как крупные компании Краснодарского края и других регионов страны, так и небольшие организации, ориентированные на динамичное развитие бизнеса и повышение конкурентоспособности.
             </div>
         </div>
@@ -173,9 +223,9 @@ title: Page 6
     </div>
 </section>
 
-<section class="section">
+<section class="section section--form">
     <div class="container">
-        <h2 class="title-h2">У вас есть проект или идея?<br> Напишите нам, мы подберем для вас лучшее предложение</h2>
+        <h2 class="title">У вас есть проект или идея?<br> Напишите нам, мы подберем для вас лучшее предложение</h2>
         <form class="form form--orange" action="/" method="post">
             <div class="form__inner form__inner--orange">
                 <div class="form__group">

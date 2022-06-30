@@ -1,3 +1,20 @@
+.people__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people__item {
+
+    &--text {
+        max-width: 900px;
+    }
+}
+
 .people__btn {
-    margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint($bp-767) {
+        display: none;
+    }
 }

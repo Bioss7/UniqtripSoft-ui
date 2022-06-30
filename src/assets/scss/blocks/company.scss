@@ -2,6 +2,10 @@
     padding: 145px 0;
     background: url('../images/banner/banner-company-bg.png') center no-repeat;
     background-size: cover;
+
+    @include breakpoint($bp-767) {
+        padding: 30px 0 35px;
+    }
 }
 
 .banner-company__inner {
@@ -17,10 +21,29 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 64px;
+
+    @include breakpoint($bp-991) {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 43px;
+    }
+
+    @include breakpoint($bp-767) {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 43px;
+    }
 }
 
 .banner-company__text {
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
+
+    @include breakpoint($bp-991) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
 }

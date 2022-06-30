@@ -1,6 +1,13 @@
 
 .container {
     padding: 0 20px;
+
+    &--mobile {
+        @include breakpoint($bp-991) {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
 }
 
 .page {
@@ -59,16 +66,55 @@
 
     &--about-project-sliders {
         padding-bottom: 40px;
+
+        @include breakpoint($bp-991) {
+            padding-bottom: 0 !important;
+        }
     }
 
     &--company {
-        padding: 85px 0 77px;
+        padding: 85px 0 38px;
+    }
+
+    &--values {
+        padding: 38px 0 92px;
+
+        @include breakpoint($bp-991) { 
+            padding-bottom: 35px !important;
+        }
+    }
+
+    &--people-slider {
+        padding: 92px 0 35px;
+
+        @include breakpoint($bp-991) { 
+            padding-top: 35px !important;
+        }
+    }
+
+    &--experience {
+        padding-bottom: 83px;
+
+        @include breakpoint($bp-991) { 
+            padding-bottom: 35px !important;
+        }
     }
 
     &--feedback {
         padding: 35px 0 45px;
+
+        @include breakpoint($bp-991) {
+            padding-top: 20px !important;
+        }
     }
 
+    &--contacts {
+        padding-top: 25px;
+
+        @include breakpoint($bp-991) { 
+            padding-bottom: 20px !important;
+        }
+    }
 
     @include breakpoint($bp-991) {
         padding: 25px 0;
@@ -84,5 +130,36 @@
 
 .section__title {
     margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+
+    @include breakpoint($bp-991) {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: left;
+    }
 }
+
+.section__text {
+    margin-bottom: 45px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+
+    &--experience {
+        margin-bottom: 65px;
+    }
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 25px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+    }
+}
+
 

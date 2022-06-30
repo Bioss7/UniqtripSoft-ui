@@ -8,12 +8,17 @@
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+
+    @include breakpoint($bp-991) {
+        padding: 33px 0;
+    }
 }
 
 .banner-project__img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .about-project {
@@ -22,10 +27,41 @@
 
 .about-project__link {
     margin-bottom: 50px;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 6px;
+        color: #0071c2;
+    }
+}
+
+.about-project__mobile-text {
+    display: none;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @include breakpoint($bp-991) {
+        display: block;
+    }
 }
 
 .about-project__title {
     margin-bottom: 25px;
+}
+
+.about-project__text {
+    margin-bottom: 70px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-991) { 
+        margin-bottom: 40px;
+    }
 }
 
 .about-project-sliders {

@@ -1,15 +1,26 @@
 .people-card {
     height: 412px;
     padding: 20px 24px 24px;
-    background: linear-gradient(133.93deg, #FDA05D 15.61%, #FEBB02 85.11%);
+    // background: linear-gradient(133.93deg, #FDA05D 15.61%, #FEBB02 85.11%);
+
+    &--bg-1 {
+        background: #c0e5ff;
+    }
+
+    &--bg-2 {
+        background: #f2f5fc;
+    }
 }
 
 .people-card__img {
     padding-left: 34px;
     margin-bottom: 100px;
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .people-card__name {
