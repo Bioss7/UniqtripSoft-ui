@@ -12,6 +12,8 @@
     }
 
     &--people {
+        max-width: 100%;
+        padding: 0;
         margin-bottom: 45px;
         overflow: unset;
 
@@ -78,6 +80,14 @@
 .slider-swiper .swiper-pagination {
     padding: 24px;
     position: static;
+
+    &--mobile {
+        display: none;
+
+        @include breakpoint(1400px) { 
+            display: block;
+        }
+    }
 
     @include breakpoint($bp-991) { 
         padding: 20px;

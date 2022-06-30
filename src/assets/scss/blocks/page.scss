@@ -116,6 +116,10 @@
         }
     }
 
+    &--intro {
+        padding-top: 0;
+    }
+
     @include breakpoint($bp-991) {
         padding: 25px 0;
     }

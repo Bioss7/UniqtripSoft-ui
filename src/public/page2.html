@@ -2,521 +2,1103 @@
 layout: default
 title: Page 2
 ---
+<!-- 
+<div class="tabs-ui__wrapper">
+    <ul class="tabs-ui__inner">
+        <li class="tabs-ui__item">
+            <button class="tabs-ui__btn" type="button" data-tab="#tab_1">Онлайн офис</button>
+        </li>
+        <li class="tabs-ui__item">
+            <button class="tabs-ui__btn tabs-ui__btn--active" type="button" data-tab="#tab_2">CRM</button>
+        </li>
+        <li class="tabs-ui__item">
+            <button class="tabs-ui__btn" type="button" data-tab="#tab_3">Контакт центры</button>
+        </li>
+        <li class="tabs-ui__item">
+            <button class="tabs-ui__btn" type="button" data-tab="#tab_4">Сайты и магазины</button>
+        </li>
+        <li class="tabs-ui__item">
+            <button class="tabs-ui__btn" type="button" data-tab="#tab_5">Автоматизации</button>
+        </li>
+    </ul>
+</div> -->
 
 <!-- Битрикс 24 -->
-<section class="section">
+<div class="container">
+    <div class="title title--main">Битрикс 24</div>
+</div>
+<div class="tabs-ui">
     <div class="container">
-        <div class="title title--main">Битрикс 24</div>
-        <div class="nav-links">
-            <ul class="nav-links__inner">
-                <li class="nav-links__item">
-                    <a class="nav-links__link" href="#">Онлайн офис</a>
+        <div class="tabs-ui__wrapper">
+            <ul class="tabs-ui__inner">
+                <li class="tabs-ui__item">
+                    <button class="tabs-ui__btn" type="button" data-tab="#tab_1">Онлайн офис</button>
                 </li>
-                <li class="nav-links__item">
-                    <a class="nav-links__link nav-links__link--active" href="#">CRM</a>
+                <li class="tabs-ui__item">
+                    <button class="tabs-ui__btn tabs-ui__btn--active" type="button" data-tab="#tab_2">CRM</button>
                 </li>
-                <li class="nav-links__item">
-                    <a class="nav-links__link" href="#">Контакт центры</a>
+                <li class="tabs-ui__item">
+                    <button class="tabs-ui__btn" type="button" data-tab="#tab_3">Контакт центры</button>
                 </li>
-                <li class="nav-links__item">
-                    <a class="nav-links__link" href="#">Сайты и магазины</a>
+                <li class="tabs-ui__item">
+                    <button class="tabs-ui__btn" type="button" data-tab="#tab_4">Сайты и магазины</button>
                 </li>
-                <li class="nav-links__item">
-                    <a class="nav-links__link" href="#">Автоматизации</a>
+                <li class="tabs-ui__item">
+                    <button class="tabs-ui__btn" type="button" data-tab="#tab_5">Автоматизации</button>
                 </li>
             </ul>
         </div>
-
-        <div class="request">
-            <div class="request__inner">
-                <div class="request__item">
-                    <div class="request__text">
-                        В CRM вы работаете с клиентами: открытые линии, лиды и сделки, счета и оплаты, каналы продаж
-                        Контакт - центр позволяет объединять все каналы общения с клиентами
-                        NEW CRM - маркетинг позволяет легко работать с большой клиентской Базовый
-                        CRM-аналитика контролирует эффективность ваших менеджеров.
+    </div>
+    <div class="tabs__content">
+        <div class="tabs__item" id="tab_1">
+            <section class="section section--intro">
+                <div class="container">
+                    <div class="request">
+                        <div class="request__inner">
+                            <div class="request__item">
+                                <div class="request__text">
+                                    В CRM вы работаете с клиентами: открытые линии, лиды и сделки, счета и оплаты, каналы продаж
+                                    Контакт - центр позволяет объединять все каналы общения с клиентами
+                                    NEW CRM - маркетинг позволяет легко работать с большой клиентской Базовый
+                                    CRM-аналитика контролирует эффективность ваших менеджеров.
+                                </div>
+                                <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
+                            </div>
+                            <div class="request__item">
+                                <div class="request__wrapper">
+                                    <img class="request__mask" src="/assets/images/mask-img.png" alt="mask">
+                                    <div class="request__img">
+                                        <img src="/assets/images/request/01.png" alt="request-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
+            
                 </div>
-                <div class="request__item">
-                    <div class="request__wrapper">
-                        <img class="request__mask" src="/assets/images/mask-img.png" alt="mask">
-                        <div class="request__img">
-                            <img src="/assets/images/request/01.png" alt="request-img">
+            </section>
+            
+            <!-- Услуги -->
+            <section class="section">
+                <div class="container">
+                    <div class="title">Услуги</div>
+                    <div class="services-application">
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Интеграция с 1С
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    Настройка типовой интеграции с любой конфигурацией 1С любого тарифного плана Битрикс24
+                                    <br><br>
+                                    Преимущества:
+                                    <ul>
+                                        <li>
+                                            При изменении данных в 1С они меняются в Битрикс24 и наоборот
+                                        </li>
+                                        <li>
+                                            Автоматическое формирование документов при смене статусов: Счет на оплату, Счет-фактура, Акты и другие документы
+                                        </li>
+                                        <li>
+                                            Учет номенклатуры и товаров, а также остатков по ним в разрезе складов
+                                        </li>
+                                        <li>
+                                            Учет и проведение оплат, а также контроль движений денежных средств в разрезе касс и расчетных счетов
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                от 5 дней
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Пакетное внедрение CRM
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    Настраиваем базовый функционал CRM Битрикс24, подключаем все каналы коммуникации и телефонию. Обучаем и практикуем вместе с Вашей командой, чтобы не один клиент не остался без внимания
+                                </div>
+                                <div class="services-application__links">
+                                    <a href="#">Скачать презентация</a><a href="#">Получить выгодное предложение</a>
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                от 5 дней
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Настройка бизнес - процессов
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    Разработка блок - схем бизнес процессов, консалтинг. Автоматизация работы сотрудников. Документооборот. Настройка типовых и процессов любой сложности
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                от 5 дней
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Расширение фукционала
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    Полная настройка интернет - магазина: авторизация, корзина, личный кабинет, функционал промокодов.По завершении настройки вы сможете протестировать работоспособность интернет магазина и всех стадий заказа товаров и услуг (до момента оплаты)
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                от 5 дней
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            
+            <!-- Этапы проведения работ -->
+            <section class="section section--stages-work">
+                <div class="container">
+                    <div class="title">Этапы проведения работ</div>
+                    <div class="stages-work">
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    1
+                                </div>
+                                <div class="stages-work__title">
+                                    Встреча с менеджером
+                                </div>
+                                <div class="stages-work__text">
+                                    Вы опишите менеджеру свои проблемы, а он предложит их поэтапное решение. При необходимости проведет демонстрацию работы системы
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    2
+                                </div>
+                                <div class="stages-work__title">
+                                    Заполнение брифа с бизнес-аналитиком
+                                </div>
+                                <div class="stages-work__text">
+                                    Проведем первичный аудит Вашего бизнеса. Подробно разберете каждую задачу. Распишите сроки реализации и стоимость каждого этапа работ
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    3
+                                </div>
+                                <div class="stages-work__title">
+                                    Базовое внедрение
+                                </div>
+                                <div class="stages-work__text">
+                                    Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни одиниз Ваших клиентов
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    4
+                                </div>
+                                <div class="stages-work__title">
+                                    Обучение
+                                </div>
+                                <div class="stages-work__text">
+                                    Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни одиниз Ваших клиентов
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    5
+                                </div>
+                                <div class="stages-work__title">
+                                    Интеграция с необходимыми системами и настройка бизнес-процессов
+                                </div>
+                                <div class="stages-work__text">
+                                    После начала работы с Битрикс24, по необходимости проведем аудит бизнеса и составим ТЗ на дальнейшие
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    6
+                                </div>
+                                <div class="stages-work__title">
+                                    Поддержка
+                                </div>
+                                <div class="stages-work__text">
+                                    В рамках базового внедрения предусмотрена техническая поддержка в течение 1 месяца. Далее Вы сможете продлить поддержку, чтобы ваша CRM всегда была актуальна и подстраивалась под изменения Вашего бизнеса. 
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Slider Успех наших клиентов -->
+            <section class="section" id="success-slider">
+                <div class="container">
+                        <h2 class="title">
+                            Успех наших клиентов
+                        </h2>
+                        
+                        <div class="swiper-container">
+                            <div class="slider-buttons">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="js-slider-swiper slider-swiper swiper">
+                                <div class="slider-swiper__wrapper swiper-wrapper">
+                                    <div class="slider-swiper__slide swiper-slide">
+                                        <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                                <div class="success-card__title">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                                <div class="success-card__subtitle">
+                                                    Выполнены следующие работы:
+                                                </div>
+                                                <ul class="success-card__list">
+                                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                    <li>Поддерживаемые типы закупок</li>
+                                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                </ul>
+                                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-swiper__slide swiper-slide">
+                                        <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                                <div class="success-card__title">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                                <div class="success-card__subtitle">
+                                                    Выполнены следующие работы:
+                                                </div>
+                                                <ul class="success-card__list">
+                                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                    <li>Поддерживаемые типы закупок</li>
+                                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                </ul>
+                                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-swiper__slide swiper-slide">
+                                        <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                                <div class="success-card__title">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                                <div class="success-card__subtitle">
+                                                    Выполнены следующие работы:
+                                                </div>
+                                                <ul class="success-card__list">
+                                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                    <li>Поддерживаемые типы закупок</li>
+                                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                </ul>
+                                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-swiper__slide swiper-slide">
+                                        <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                                <div class="success-card__title">
+                                                    <a href="#">Visit-sochi.com</a>
+                                                </div>
+                                                <div class="success-card__subtitle">
+                                                    Выполнены следующие работы:
+                                                </div>
+                                                <ul class="success-card__list">
+                                                    <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                    <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                    <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                    <li>Поддерживаемые типы закупок</li>
+                                                    <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                                </ul>
+                                                <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            
+            <!-- Пакеты на подключение -->
+            <section class="section section--package" id="package">
+                <div class="container">
+                    <h2 class="title">Пакеты на подключение</h2>
+                    <div class="package">
+                        <div class="package__inner">
+                            <div class="package__item">
+                                <div class="package__card">
+                                    <div class="package__title">
+                                        Базовый
+                                    </div>
+                                    <div class="package__price">
+                                        <div class="package__value">4 790 ₽</div>
+                                        <div class="package__month">месяц</div>
+                                    </div>
+                                    <div class="package__text">
+                                        Для эффективной работы небольших компаний и отделов продаж Пользователей 5
+                                    </div>
+                                    <a class="package__link" href="#">Подробнее</a>
+                                    <a class="package__btn" href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="package__item">
+                                <div class="package__card package__card--green">
+                                    <div class="package__title package__title--white">
+                                        Стандартный
+                                    </div>
+                                    <div class="package__price package__price--white">
+                                        <div class="package__value">6 790 ₽</div>
+                                        <div class="package__month">месяц</div>
+                                    </div>
+                                    <div class="package__text package__text--white">
+                                        Для эффективной работы небольших компаний и отделов продаж Пользователей 5
+                                    </div>
+                                    <a class="package__link" href="#">Подробнее</a>
+                                    <a class="package__btn" href="#">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="package__item">
+                                <div class="package__card">
+                                    <div class="package__title package__title--white">
+                                        Профессиональный
+                                    </div>
+                                    <div class="package__price package__price--white">
+                                        <div class="package__value">9 790 ₽</div>
+                                        <div class="package__month">месяц</div>
+                                    </div>
+                                    <div class="package__text package__text--white">
+                                        Для эффективной работы небольших компаний и отделов продаж Пользователей 500
+                                    </div>
+                                    <a class="package__link" href="#">Подробнее</a>
+                                    <a class="package__btn" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__note">
+                            *Стоимость внедрения лицензции расчитают отдельно
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Форма Заказать пакет внедрения -->
+            <section class="section section--form">
+                <div class="container">
+                    <h2 class="title">Заказать пакет внедрения</h2>
+                    <form class="form form--orange" action="/" method="post">
+                        <div class="form__inner form__inner--orange">
+                            <div class="form__group">
+                                <label for="">E-mail</label>
+                                <input class="form__control" type="text" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="form__group">
+                                <label for="">Ваше имя</label>
+                                <input class="form__control" type="text" placeholder="Ваш имя">
+                            </div>
+                        </div>
+                        <div class="form__group form__group--note">
+                            <label for="">Выберите нужный вам пакет внедрения </label>
+                            <div class="js-select"></div>
+                        </div>
+                        <div class="form__note">
+                            *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
+                        </div>
+                        
+                        <div class="form__group form__group--btn">
+                            <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
         </div>
 
-    </div>
-</section>
+        <div class="tabs__item" id="tab_2">
+            <div class="container">
+                <div class="request">
+                    <div class="request__inner">
+                        <div class="request__item">
+                            <div class="request__title">Cash flow</div>
+                            <div class="request__text request__text--pt-0">
+                                Анализ операционной деятельности предприятия. Бюджет и факт прибыли и убытков компании. Источники формирования прибыли
+                            </div>
+                            <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
+                        </div>
+                        <div class="request__item">
+                            <div class="request__wrapper">
+                                <img class="request__mask" src="/assets/images/mask-img.png" alt="mask">
+                                <div class="request__img">
+                                    <img src="/assets/images/request/01.png" alt="request-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<!-- Услуги -->
-<section class="section">
-    <div class="container">
-        <div class="title">Услуги</div>
-        <div class="services-application">
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Интеграция с 1С
+            <section class="section">
+                <div class="container">
+                    <div class="title">Преимущества</div>
+                    <div class="text">
+                        С Power BI вы сможете анализировать все данные своей компании, как облачные, так и локальные. Включив воображение и используя визуальные инструменты Power BI, вы создадите интерактивные отчёты за считанные секунды в режиме реального времени. Система сама автоматически устранит проблемы с форматированием данных. Работая с Power BI, вы сможете подключить базы данных SQL Server, модели Analysis Services и другие источники данных к одним и тем же интерактивным панелям в Power BI
                     </div>
                 </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Настройка типовой интеграции с любой конфигурацией 1С любого тарифного плана Битрикс24
-                        <br><br>
-                        Преимущества:
-                        <ul>
-                            <li>
-                                При изменении данных в 1С они меняются в Битрикс24 и наоборот
-                            </li>
-                            <li>
-                                Автоматическое формирование документов при смене статусов: Счет на оплату, Счет-фактура, Акты и другие документы
-                            </li>
-                            <li>
-                                Учет номенклатуры и товаров, а также остатков по ним в разрезе складов
-                            </li>
-                            <li>
-                                Учет и проведение оплат, а также контроль движений денежных средств в разрезе касс и расчетных счетов
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
+            </section>
+            
+            <!-- Услуги -->
+            <section class="section">
+                <div class="container">
+                    <div class="title">Услуги</div>
+                    <div class="services-application">
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Разработка стратегии внедрения систем бизнеса - аналитики
                                 </div>
                             </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    -Определение состава информации, которую следует анализировать для повышения    эффективности бизнеса<br>
+                                    -Выявление возможностей по получению требуемых данных<br>
+                                    -Проектирование целевой архитектуры систем бизнес-аналитики<br>
+                                    -Выявление необходимых изменений в бизнес-процессах, адаптация учетных систем и изменение форм отчетности для внедрения систем бизнес-анализа<br>
+                                    -Разработка и внедрение системы ключевых показателей эффективности (KPI)
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                индивидуально
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Анализ источников данных
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    -Обследование источников данных для системы бизнес-анализа<br>
+                                    -Определение, формализация состава объектов и атрибутов, необходимых для дальнейшего анализа<br>
+                                    -Сегментация данных по степени их значимости для анализа.<br>
+                                    -Определение возможностей расширения состава получаемых данных с привлечением внешних дополнительных источников
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                индивидуально
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Разработка функционально-технических требований
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    -Обследование бизнес-процессов заказчика, консолидация и формализация бизнес-требований к системам бизнес-анализа.<br>
+                                    -Обследование ИТ-ландшафта заказчика. Формирование технических требований, ИТ-архитектуры систем на основе выявленных бизнес-требований и с учетом имеющейся ИТ-инфраструктуры.<br>
+                                    -Разработка рекомендаций по выбору BI-решений, удовлетворяющих сформированным функционально-техническим требованиям
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                индивидуально
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Разработка корпоротивных хранилищ данных и витрин данных
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    -Проектирование и разработка ETL-процедур: извлечение, трансформация и загрузка данных<br>
+                                    -Разработка процедур и инструментов для сопоставления данных из разных источников (бизнес-правила, общие справочники, таблицы сопоставлений и т.п.)<br>
+                                    -Определение и реализация сценариев очистки и трансформации данных<br>
+                                    -Проектирование объектной модели хранилища данных и целевой архитектуры хранилища данных<br>
+                                    -Разработка хранилища данных<br>
+                                    -Документирование разработанной функциональности
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                индивидуально
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Настройка и разработка аналитических панелей, дашбордов, рекламных отчетов
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    -Разработка модели данных для реализации аналитической отчетности на BI-платформе.<br>
+                                    -Разработка скриптов загрузки данных (из источников, витрин данных) в модель данных аналитического приложения<br>
+                                    -Разработка визуальной части системы бизнес-анализа – аналитических отчетов (панелей, дашбордов)<br>
+                                    -Разработка регламентных отчетов и настройка периодической доставки отчетов пользователям<br>
+                                    -Реализация правил разграничения прав доступа на уровне отчетов или на уровне данных в рамках одного отчета
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                индивидуально
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-application__item">
+                            <div class="services-application__header">
+                                <div class="services-application__title">
+                                    Оцифровка бизнеаса. Поиск точек роста и оптимизации бизнеса
+                                </div>
+                            </div>
+                            <div class="services-application__content">
+                                <div class="services-application__text">
+                                    -Цифровая трансформация<br>
+                                    -Оцениваем текущую ситуацию в бизнесе, планируем работу команды аналитики и продумываем подходящую для вашего бизнеса инфраструктуру данных<br>
+                                    -Как улучшить ключевые показатели вашего бизнеса и протестировать гипотезы<br>
+                                    -Строим юнит-экономику, оцениваем рынок, определяем методы и подходы визуализации данных для принятия управленческих решений
+                                </div>
+                            </div>
+                            <div class="services-application__footer">
+                                <div class="services-application__item-footer services-application__item-footer--btn">
+                                    <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
+                                </div>
+                                <div class="services-application__item-footer">
+                                    <div class="services-application-term">
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__lead-time">
+                                                Время выполнения
+                                            </div>
+                                            <div class="services-application-term__day">
+                                                индивидуально
+                                            </div>
+                                        </div>
+                                        <div class="services-application-term__item">
+                                            <div class="services-application-term__icon">
+                                                <img src="/assets/images/calendar.svg" alt="icon-date">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Пакетное внедрение CRM
-                    </div>
-                </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Настраиваем базовый функционал CRM Битрикс24, подключаем все каналы коммуникации и телефонию. Обучаем и практикуем вместе с Вашей командой, чтобы не один клиент не остался без внимания
-                    </div>
-                    <div class="services-application__links">
-                        <a href="#">Скачать презентация</a><a href="#">Получить выгодное предложение</a>
-                    </div>
-                </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
+            </section>
+            
+            <!-- Этапы проведения работ -->
+            <section class="section">
+                <div class="container">
+                    <div class="title">Этапы проведения работ</div>
+                    <div class="stages-work">
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    1
                                 </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
+                                <div class="stages-work__title">
+                                    Встреча с менеджером
                                 </div>
-                            </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
+                                <div class="stages-work__text">
+                                    Вы опишите менеджеру свои проблемы, а он предложит их поэтапное решение. При необходимости проведет демонстрацию работы системы
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    2
+                                </div>
+                                <div class="stages-work__title">
+                                    Заполнение брифа с бизнес-аналитиком
+                                </div>
+                                <div class="stages-work__text">
+                                    Проведем первичный аудит Вашего бизнеса. Подробно разберете каждую задачу. Распишите сроки реализации и стоимость каждого этапа работ
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    3
+                                </div>
+                                <div class="stages-work__title">
+                                    Базовое внедрение
+                                </div>
+                                <div class="stages-work__text">
+                                    Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни одиниз Ваших клиентов
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    4
+                                </div>
+                                <div class="stages-work__title">
+                                    Обучение
+                                </div>
+                                <div class="stages-work__text">
+                                    Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни одиниз Ваших клиентов
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    5
+                                </div>
+                                <div class="stages-work__title">
+                                    Интеграция с необходимыми системами и настройка бизнес-процессов
+                                </div>
+                                <div class="stages-work__text">
+                                    После начала работы с Битрикс24, по необходимости проведем аудит бизнеса и составим ТЗ на дальнейшие
+                                </div>
+                            </a>
+                        </div>
+                        <div class="stages-work__item">
+                            <a class="stages-work__link" href="#">
+                                <div class="stages-work__content">
+                                    6
+                                </div>
+                                <div class="stages-work__title">
+                                    Поддержка
+                                </div>
+                                <div class="stages-work__text">
+                                    В рамках базового внедрения предусмотрена техническая поддержка в течение 1 месяца. Далее Вы сможете продлить поддержку, чтобы ваша CRM всегда была актуальна и подстраивалась под изменения Вашего бизнеса.
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Настройка бизнес - процессов
-                    </div>
+            </section>
+            
+            <!-- Slider Успех наших клиентов -->
+            <section class="section" id="success-slider">
+                <div class="container">
+                     <h2 class="title">
+                         Успех наших клиентов
+                     </h2>
+                     
+                     <div class="swiper-container">
+                         <div class="slider-buttons">
+                             <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+                         </div>
+                         <div class="js-slider-swiper slider-swiper swiper">
+                             <div class="slider-swiper__wrapper swiper-wrapper">
+                                 <div class="slider-swiper__slide swiper-slide">
+                                     <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                             <div class="success-card__title">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                             <div class="success-card__subtitle">
+                                                 Выполнены следующие работы:
+                                             </div>
+                                             <ul class="success-card__list">
+                                                 <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                 <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                 <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                 <li>Поддерживаемые типы закупок</li>
+                                                 <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                             </ul>
+                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                     </div>
+                                 </div>
+                                 <div class="slider-swiper__slide swiper-slide">
+                                     <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                             <div class="success-card__title">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                             <div class="success-card__subtitle">
+                                                 Выполнены следующие работы:
+                                             </div>
+                                             <ul class="success-card__list">
+                                                 <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                 <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                 <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                 <li>Поддерживаемые типы закупок</li>
+                                                 <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                             </ul>
+                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                     </div>
+                                 </div>
+                                 <div class="slider-swiper__slide swiper-slide">
+                                     <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                             <div class="success-card__title">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                             <div class="success-card__subtitle">
+                                                 Выполнены следующие работы:
+                                             </div>
+                                             <ul class="success-card__list">
+                                                 <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                 <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                 <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                 <li>Поддерживаемые типы закупок</li>
+                                                 <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                             </ul>
+                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                     </div>
+                                 </div>
+                                 <div class="slider-swiper__slide swiper-slide">
+                                     <div class="success-card">
+                                        <div class="success-card__inner">
+                                            <img src="/assets/images/success/01.svg" alt="success">
+                                            <div class="success-card__title success-card__title--mobile">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                        </div>
+                                        <div class="success-card__content">
+                                             <div class="success-card__title">
+                                                 <a href="#">Visit-sochi.com</a>
+                                             </div>
+                                             <div class="success-card__subtitle">
+                                                 Выполнены следующие работы:
+                                             </div>
+                                             <ul class="success-card__list">
+                                                 <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
+                                                 <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
+                                                 <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
+                                                 <li>Поддерживаемые типы закупок</li>
+                                                 <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
+                                             </ul>
+                                             <a class="success-card__link" href="#" target="_blank">Подробнее</a>
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="swiper-pagination"></div>
+                         </div>
+                     </div>
                 </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Разработка блок - схем бизнес процессов, консалтинг. Автоматизация работы сотрудников. Документооборот. Настройка типовых и процессов любой сложности
-                    </div>
-                </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
-                                </div>
+            </section>
+            
+            <!-- Форма Заказать пакет внедрения -->
+            <section class="section section--form">
+                <div class="container">
+                    <h2 class="title">Заказать пакет внедрения</h2>
+                    <form class="form form--orange" action="/" method="post">
+                        <div class="form__inner form__inner--orange">
+                            <div class="form__group">
+                                <label for="">E-mail</label>
+                                <input class="form__control" type="text" placeholder="Ваш e-mail">
                             </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
-                                </div>
+                            <div class="form__group">
+                                <label for="">Ваше имя</label>
+                                <input class="form__control" type="text" placeholder="Ваш имя">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="services-application__item">
-                <div class="services-application__header">
-                    <div class="services-application__title">
-                        Расширение фукционала
-                    </div>
-                </div>
-                <div class="services-application__content">
-                    <div class="services-application__text">
-                        Полная настройка интернет - магазина: авторизация, корзина, личный кабинет, функционал промокодов.По завершении настройки вы сможете протестировать работоспособность интернет магазина и всех стадий заказа товаров и услуг (до момента оплаты)
-                    </div>
-                </div>
-                <div class="services-application__footer">
-                    <div class="services-application__item-footer services-application__item-footer--btn">
-                        <a class="btn btn--blue-transparent" href="#">Оставить заявку</a>
-                    </div>
-                    <div class="services-application__item-footer">
-                        <div class="services-application-term">
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__lead-time">
-                                    Время выполнения
-                                </div>
-                                <div class="services-application-term__day">
-                                    от 5 дней
-                                </div>
-                            </div>
-                            <div class="services-application-term__item">
-                                <div class="services-application-term__icon">
-                                    <img src="/assets/images/calendar.svg" alt="icon-date">
-                                </div>
-                            </div>
+                        <div class="form__group form__group--note">
+                            <label for="">Выберите нужный вам пакет внедрения </label>
+                            <div class="js-select"></div>
                         </div>
-                    </div>
+                        <div class="form__note">
+                            *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
+                        </div>
+                       
+                        <div class="form__group form__group--btn">
+                            <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                        </div>
+                    </form>
                 </div>
-            </div>
+            </section>
+            
+        </div>
+
+        <div class="tabs__item" id="tab_3">
+
+        </div>
+
+        <div class="tabs__item" id="tab_4">
+
+        </div>
+
+        <div class="tabs__item" id="tab_5">
+
         </div>
     </div>
-</section>
-
-<!-- Этапы проведения работ -->
-<section class="section section--stages-work">
-    <div class="container">
-        <div class="title">Этапы проведения работ</div>
-        <div class="stages-work">
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        1
+    <!-- Форма Заказать пакет внедрения -->
+    <section class="section section--form">
+        <div class="container">
+            <h2 class="title">Заказать пакет внедрения</h2>
+            <form class="form form--orange" action="/" method="post">
+                <div class="form__inner form__inner--orange">
+                    <div class="form__group">
+                        <label for="">E-mail</label>
+                        <input class="form__control" type="text" placeholder="Ваш e-mail">
                     </div>
-                    <div class="stages-work__title">
-                        Встреча с менеджером
+                    <div class="form__group">
+                        <label for="">Ваше имя</label>
+                        <input class="form__control" type="text" placeholder="Ваш имя">
                     </div>
-                    <div class="stages-work__text">
-                        Вы опишите менеджеру свои проблемы, а он предложит их поэтапное решение. При необходимости проведет демонстрацию работы системы
-                    </div>
-                </a>
-            </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        2
-                    </div>
-                    <div class="stages-work__title">
-                        Заполнение брифа с бизнес-аналитиком
-                    </div>
-                    <div class="stages-work__text">
-                        Проведем первичный аудит Вашего бизнеса. Подробно разберете каждую задачу. Распишите сроки реализации и стоимость каждого этапа работ
-                    </div>
-                </a>
-            </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        3
-                    </div>
-                    <div class="stages-work__title">
-                        Базовое внедрение
-                    </div>
-                    <div class="stages-work__text">
-                        Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни одиниз Ваших клиентов
-                    </div>
-                </a>
-            </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        4
-                    </div>
-                    <div class="stages-work__title">
-                        Обучение
-                    </div>
-                    <div class="stages-work__text">
-                        Настроим базовые инструменты Битрикс24. Вы получите готовую CRM-систему, к которой будут все источники новых клиентов, благодаря чему не потеряется ни одиниз Ваших клиентов
-                    </div>
-                </a>
-            </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        5
-                    </div>
-                    <div class="stages-work__title">
-                        Интеграция с необходимыми системами и настройка бизнес-процессов
-                    </div>
-                    <div class="stages-work__text">
-                        После начала работы с Битрикс24, по необходимости проведем аудит бизнеса и составим ТЗ на дальнейшие
-                    </div>
-                </a>
-            </div>
-            <div class="stages-work__item">
-                <a class="stages-work__link" href="#">
-                    <div class="stages-work__content">
-                        6
-                    </div>
-                    <div class="stages-work__title">
-                        Поддержка
-                    </div>
-                    <div class="stages-work__text">
-                        В рамках базового внедрения предусмотрена техническая поддержка в течение 1 месяца. Далее Вы сможете продлить поддержку, чтобы ваша CRM всегда была актуальна и подстраивалась под изменения Вашего бизнеса. 
-                    </div>
-                </a>
-            </div>
+                </div>
+                <div class="form__group form__group--note">
+                    <label for="">Выберите нужный вам пакет внедрения </label>
+                    <div class="js-select"></div>
+                </div>
+                <div class="form__note">
+                    *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
+                </div>
+                
+                <div class="form__group form__group--btn">
+                    <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                </div>
+            </form>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
-<!-- Slider Успех наших клиентов -->
-<section class="section" id="success-slider">
-    <div class="container">
-         <h2 class="title">
-             Успех наших клиентов
-         </h2>
-         
-         <div class="swiper-container">
-             <div class="slider-buttons">
-                 <div class="swiper-button-prev"></div>
-                 <div class="swiper-button-next"></div>
-             </div>
-             <div class="js-slider-swiper slider-swiper swiper">
-                 <div class="slider-swiper__wrapper swiper-wrapper">
-                     <div class="slider-swiper__slide swiper-slide">
-                         <div class="success-card">
-                            <div class="success-card__inner">
-                                <img src="/assets/images/success/01.svg" alt="success">
-                                <div class="success-card__title success-card__title--mobile">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                            </div>
-                            <div class="success-card__content">
-                                 <div class="success-card__title">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                                 <div class="success-card__subtitle">
-                                     Выполнены следующие работы:
-                                 </div>
-                                 <ul class="success-card__list">
-                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                     <li>Поддерживаемые типы закупок</li>
-                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                 </ul>
-                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                            </div>
-                         </div>
-                     </div>
-                     <div class="slider-swiper__slide swiper-slide">
-                         <div class="success-card">
-                            <div class="success-card__inner">
-                                <img src="/assets/images/success/01.svg" alt="success">
-                                <div class="success-card__title success-card__title--mobile">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                            </div>
-                            <div class="success-card__content">
-                                 <div class="success-card__title">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                                 <div class="success-card__subtitle">
-                                     Выполнены следующие работы:
-                                 </div>
-                                 <ul class="success-card__list">
-                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                     <li>Поддерживаемые типы закупок</li>
-                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                 </ul>
-                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                            </div>
-                         </div>
-                     </div>
-                     <div class="slider-swiper__slide swiper-slide">
-                         <div class="success-card">
-                            <div class="success-card__inner">
-                                <img src="/assets/images/success/01.svg" alt="success">
-                                <div class="success-card__title success-card__title--mobile">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                            </div>
-                            <div class="success-card__content">
-                                 <div class="success-card__title">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                                 <div class="success-card__subtitle">
-                                     Выполнены следующие работы:
-                                 </div>
-                                 <ul class="success-card__list">
-                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                     <li>Поддерживаемые типы закупок</li>
-                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                 </ul>
-                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                            </div>
-                         </div>
-                     </div>
-                     <div class="slider-swiper__slide swiper-slide">
-                         <div class="success-card">
-                            <div class="success-card__inner">
-                                <img src="/assets/images/success/01.svg" alt="success">
-                                <div class="success-card__title success-card__title--mobile">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                            </div>
-                            <div class="success-card__content">
-                                 <div class="success-card__title">
-                                     <a href="#">Visit-sochi.com</a>
-                                 </div>
-                                 <div class="success-card__subtitle">
-                                     Выполнены следующие работы:
-                                 </div>
-                                 <ul class="success-card__list">
-                                     <li>Разработан блок (модуль) для публикации аукционов, тендеров, запросов котировок</li>
-                                     <li>Разработан личный кабинет участника, с историей участия и подачи документов</li>
-                                     <li>Разработан личный кабинет сотрудника отдела закупок и тендерных процеду</li>
-                                     <li>Поддерживаемые типы закупок</li>
-                                     <li>Редукцион. на понижение ставок (покупка товаров/услуг)</li>
-                                 </ul>
-                                 <a class="success-card__link" href="#" target="_blank">Подробнее</a>
-                            </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-pagination"></div>
-             </div>
-         </div>
-    </div>
-</section>
-
-<!-- Пакеты на подключение -->
-<section class="section section--package" id="package">
-    <div class="container">
-        <h2 class="title">Пакеты на подключение</h2>
-        <div class="package">
-            <div class="package__inner">
-                <div class="package__item">
-                    <div class="package__card">
-                        <div class="package__title">
-                            Базовый
-                        </div>
-                        <div class="package__price">
-                            <div class="package__value">4 790 ₽</div>
-                            <div class="package__month">месяц</div>
-                        </div>
-                        <div class="package__text">
-                            Для эффективной работы небольших компаний и отделов продаж Пользователей 5
-                        </div>
-                        <a class="package__link" href="#">Подробнее</a>
-                        <a class="package__btn" href="#">Заказать</a>
-                    </div>
-                </div>
-                <div class="package__item">
-                    <div class="package__card package__card--green">
-                        <div class="package__title package__title--white">
-                            Стандартный
-                        </div>
-                        <div class="package__price package__price--white">
-                            <div class="package__value">6 790 ₽</div>
-                            <div class="package__month">месяц</div>
-                        </div>
-                        <div class="package__text package__text--white">
-                            Для эффективной работы небольших компаний и отделов продаж Пользователей 5
-                        </div>
-                        <a class="package__link" href="#">Подробнее</a>
-                        <a class="package__btn" href="#">Заказать</a>
-                    </div>
-                </div>
-                <div class="package__item">
-                    <div class="package__card">
-                        <div class="package__title package__title--white">
-                            Профессиональный
-                        </div>
-                        <div class="package__price package__price--white">
-                            <div class="package__value">9 790 ₽</div>
-                            <div class="package__month">месяц</div>
-                        </div>
-                        <div class="package__text package__text--white">
-                            Для эффективной работы небольших компаний и отделов продаж Пользователей 500
-                        </div>
-                        <a class="package__link" href="#">Подробнее</a>
-                        <a class="package__btn" href="#">Заказать</a>
-                    </div>
-                </div>
-            </div>
-            <div class="package__note">
-                *Стоимость внедрения лицензции расчитают отдельно
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Форма Заказать пакет внедрения -->
-<section class="section section--form">
-    <div class="container">
-        <h2 class="title">Заказать пакет внедрения</h2>
-        <form class="form form--orange" action="/" method="post">
-            <div class="form__inner form__inner--orange">
-                <div class="form__group">
-                    <label for="">E-mail</label>
-                    <input class="form__control" type="text" placeholder="Ваш e-mail">
-                </div>
-                <div class="form__group">
-                    <label for="">Ваше имя</label>
-                    <input class="form__control" type="text" placeholder="Ваш имя">
-                </div>
-            </div>
-            <div class="form__group form__group--note">
-                <label for="">Выберите нужный вам пакет внедрения </label>
-                <div class="js-select"></div>
-            </div>
-            <div class="form__note">
-                *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
-            </div>
-           
-            <div class="form__group form__group--btn">
-                <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
-            </div>
-        </form>
-    </div>
-</section>
 

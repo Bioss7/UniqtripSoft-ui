@@ -20,6 +20,10 @@
     @include breakpoint($bp-991) {
         padding: 20px 0;
     }
+
+    @include breakpoint(393px) {
+        padding: 27px 0;
+    }
 }
 
 .header__top {
