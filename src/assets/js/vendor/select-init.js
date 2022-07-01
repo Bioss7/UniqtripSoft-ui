@@ -1,5 +1,3 @@
-console.warn("Initialization SelectUI");
-
 document.addEventListener("DOMContentLoaded", function(){
     const selectInit = document.querySelector('.js-select');
     if(selectInit) {

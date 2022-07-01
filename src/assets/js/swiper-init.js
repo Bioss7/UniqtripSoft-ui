@@ -1,5 +1,3 @@
-console.warn("Initialization Swiper sliders");
-
 document.addEventListener('DOMContentLoaded', function() {
 
     const swiper = new Swiper('.js-slider-swiper', {
@@ -54,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
         },
         navigation: {
-            nextEl: '.js-arrow-prev',
-            prevEl: '.js-arrow-next'
+            nextEl: '.js-arrow-next',
+            prevEl: '.js-arrow-prev'
         },
         breakpoints: {
             320: {

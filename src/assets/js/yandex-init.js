@@ -1,10 +1,7 @@
 // Карта получение координат 
 // https://yandex.ru/map-constructor/location-tool/?from=club
 if(document.querySelector('.js-map')) {
-    console.warn("Initialization Yandex Map API");
-
     let center = [43.403638574554535,39.96349549999997];
-
 
     function init() {
         let map = new ymaps.Map('js-map', {

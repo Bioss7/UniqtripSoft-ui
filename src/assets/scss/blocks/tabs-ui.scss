@@ -15,9 +15,7 @@
         padding: 0 0 16px;
     }
    
-    @include breakpoint($bp-767) {
-        overflow: scroll;
-    }
+    overflow: scroll;
 }
 
 .tabs-ui__item {
@@ -26,6 +24,7 @@
 
 .tabs-ui__btn {
     display: inline-block;
+    padding: 0;
 
     background: transparent;
     border: none;

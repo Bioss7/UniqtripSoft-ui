@@ -1,6 +1,5 @@
 
 if(document.querySelector(".tabs-ui__btn")) {
-    console.warn("Initialization Tabs");
     const tabsBtn   = document.querySelectorAll(".tabs-ui__btn");
     const tabsItems = document.querySelectorAll(".tabs__item");
 
