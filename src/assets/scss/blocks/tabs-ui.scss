@@ -10,12 +10,12 @@
     display: flex;
     margin: 0 -15px;
     padding: 20px 0 16px;
-    
+    overflow: auto;
+
     @include breakpoint($bp-767) { 
         padding: 0 0 16px;
     }
    
-    overflow: scroll;
 }
 
 .tabs-ui__item {

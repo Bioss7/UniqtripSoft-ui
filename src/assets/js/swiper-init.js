@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+import Swiper from 'swiper';
 
+document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.js-slider-swiper', {
         slidesPerView: 1,
         spaceBetween: 30,

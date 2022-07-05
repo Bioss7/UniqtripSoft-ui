@@ -19,6 +19,9 @@ const webpackStream = require('webpack-stream');
 const flatten = require('gulp-flatten');
 const concat = require('gulp-concat-css');
 const replace = require('gulp-replace');
+const rev_append = require('gulp-rev-append');
+const hash = require('gulp-hash');
+const inject = require('gulp-inject');
 
 const browserSync = require("browser-sync").create();
 
@@ -273,12 +276,70 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
+function hashJS(cb) {
+    var jsStream = gulp.src(path.src.js, { base: srcPath + 'assets/js/' })
+        .pipe(plumber({
+            errorHandler: function (err) {
+                notify.onError({
+                    title: "JS Error",
+                    message: "Error: <%= error.message %>"
+                })(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(webpackStream({
+            mode: "development",
+            output: {
+                filename: 'app.js',
+            },
+            module: {
+                rules: [
+                    {
+                        test: /\.(js)$/,
+                        exclude: /(node_modules)/,
+                        loader: 'babel-loader',
+                        query: {
+                            presets: ['@babel/preset-env']
+                        }
+                    }
+                ]
+            }
+        }))
+        .pipe(hash()) 
+        .pipe(gulp.dest(path.build.js)) 
+        .pipe(hash.manifest('public/assets.json', { 
+            deleteOld: true,
+            sourceDir: __dirname + '/public/js'
+        }))
+        .pipe(gulp.dest('.'));
+        // .pipe(inject(jsStream, {ignorePath: 'dist/', addRootSlash: false, name: 'app'}))
+        // .pipe(gulp.dest('./dist'));
+
+    cb();
+}
+
+function assetsJs(cb) {
+    var assets = require('./public/assets.json');
+    return gulp.src('./dist/**/*.html')
+        .pipe(replace('app.js', assets['app.js']))
+        .pipe(gulp.dest('dist'));
+    
+    cb();
+}
+
+// function revAppend() {
+//     return gulp.src('src/partials/head.html')
+//         .pipe(rev_append())
+//         .pipe(dest('dist/public/'));
+// }
+
 /* Собирает файлы для 1С Битрикс*/
 const build = gulp.series(clean, gulp.parallel(html, css, js, jsVendor, images, fonts));
 
 /* Собирает файлы для Разработки и запускает watcher*/
 const dev = gulp.series(clean, gulp.parallel(html, css, js, images, fonts), cssReplaceAbsolute);
 const watch = gulp.parallel(build, watchFiles, serve);
+const _hash = gulp.parallel(hashJS, assetsJs);
 
 /* Exports Tasks */
 exports.html = html;
@@ -292,3 +353,5 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.hashJS = hashJS;
+exports._hash = _hash;
