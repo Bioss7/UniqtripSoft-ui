@@ -277,7 +277,7 @@ function watchFiles() {
 }
 
 function hashJS(cb) {
-    var jsStream = gulp.src(path.src.js, { base: srcPath + 'assets/js/' })
+    return gulp.src(path.src.js, { base: srcPath + 'assets/js/' })
         .pipe(plumber({
             errorHandler: function (err) {
                 notify.onError({
@@ -318,10 +318,41 @@ function hashJS(cb) {
     cb();
 }
 
+function hashCSS(cb) {
+    return gulp.src(path.src.css, { base: srcPath + "assets/scss/" })
+        .pipe(plumber({
+            errorHandler: function (err) {
+                notify.onError({
+                    title: "SCSS Error",
+                    message: "Error: <%= error.message %>"
+                })(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sass({
+            includePaths: './node_modules/'
+        }))
+        .pipe(rename({
+            suffix: ".min",
+            extname: ".css"
+        }))
+        .pipe(dest(path.build.css))
+        .pipe(hash()) 
+        .pipe(gulp.dest(path.build.css)) 
+        .pipe(hash.manifest('public/assets.json', { 
+            deleteOld: false,
+            sourceDir: __dirname + '/public/css'
+        }))
+        .pipe(gulp.dest('.'));
+
+    cb();
+}
+
 function assetsJs(cb) {
     var assets = require('./public/assets.json');
     return gulp.src('./dist/**/*.html')
         .pipe(replace('app.js', assets['app.js']))
+        .pipe(replace('style.min.css', assets['style.min.css']))
         .pipe(gulp.dest('dist'));
     
     cb();
@@ -339,7 +370,7 @@ const build = gulp.series(clean, gulp.parallel(html, css, js, jsVendor, images, 
 /* Собирает файлы для Разработки и запускает watcher*/
 const dev = gulp.series(clean, gulp.parallel(html, css, js, images, fonts), cssReplaceAbsolute);
 const watch = gulp.parallel(build, watchFiles, serve);
-const _hash = gulp.parallel(hashJS, assetsJs);
+const _hash = gulp.parallel(hashJS, hashCSS, assetsJs);
 
 /* Exports Tasks */
 exports.html = html;
