@@ -1,47 +1,41 @@
-const { data } = require("jquery");
+/* 
+Разметка для селекта
+<div id="select-ui"></div>
+
+Фейковый селект, пока не выбран первый селект
+<div class="select-ui select-ui-hide">
+    <div class="select-ui__backdrop" data-type="backdrop"></div>
+    <div class="select-ui__input" data-type="input">
+        <span data-type="value">Выберите элемент</span>
+    </div>
+    <div class="select-ui__dropdown">
+        <ul class="select-ui__list">        
+        </ul>
+    </div>
+</div>
+
+Вызов библиотеки
+document.addEventListener("DOMContentLoaded", function(){
+    const select = new SelectUI('#select-ui', {
+        placeholder: 'Выберите элемент',
+        // selectedId: '2',
+        data: [
+            {id: '1', value: 'По популярности'},
+            {id: '2', value: 'По возрастанию цены'},
+        ],
+            onSelect(item){
+            // console.log('selected Item', item)
+        }
+    });
+})
+
+Удаление селекта, select - переменная класса
+select.destroy();
+*/
 
 const getTemplate = (data = [], placeholder, selectedId, selectedDataProp) => {
     let text = placeholder ?? 'Placeholder по умолч.';
     
-    const items = data.map(item => {
-        let cls = '';
-
-        if(selectedDataProp === undefined) {
-            if(item.id === selectedId){                
-                text = item.value;
-                cls = 'selected';
-            }
-        } else {
-            if(item.dataProp === selectedDataProp){
-                text = item.value;
-                cls = 'selected';
-            }
-        }
-
-        return `
-            <li class="select-ui__item ${cls}" data-type="item" data-id=${item.id} data-prop="${item.dataProp}">${item.value}</li>
-        `
-    });
-
-    return `
-    <div class="select-ui__backdrop" data-type="backdrop"></div>
-    <div class="select-ui__input" data-type="input">
-        <span data-type="value">${text}</span>
-    </div>
-    <div class="select-ui__dropdown">
-        <ul class="select-ui__list">
-           ${items.join('')}
-        </ul>
-    </div>
-    `
-}
-
-const selectItem = (data, selectedId, selectedDataProp) => {
-    // let text = placeholder ?? 'Placeholder по умолч.';
-
-    console.log("data this", data)
-    console.log("selectedId this", selectedId)
-
     const items = data.map(item => {
         let cls = '';
 
@@ -88,22 +82,10 @@ class SelectUI{
     }
 
     render(){
-        // const {placeholder, data} = this.options;
-        const {placeholder, data} = this.options;
+        const {placeholder, data} = this.options
         this.$el.classList.add('select-ui');
-        // this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId, this.selectedDataProp);
-        // this.hideFakeSelect();
-        this.$el.innerHTML = selectItem(this.getData(), this.selectedId);
-
-    }
-
-    getData() {
-        let data = [];
-        let selectList = document.querySelector('.select-ui__list').querySelectorAll('.select-ui__item');
-        selectList.forEach((item) => {
-            data.push({id: item.dataset.id, dataProp: item.dataset.prop, value: item.innerText});
-        });
-        return data;
+        this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId, this.selectedDataProp);
+        this.hideFakeSelect();
     }
 
     setup(){
@@ -115,18 +97,18 @@ class SelectUI{
 
     clickHandler(event){
         const {type} = event.target.dataset;
-        if(type === 'input') {
-            this.toggle();
+        if(type === 'input'){
+            this.toggle()
         } else if (type === 'item'){
             const id = event.target.dataset.id;
-            this.select(id);
+            this.select(id);           
         } else if(type === 'backdrop'){
             this.close();
-        } else if(type === 'item'){
-            const dataProp = event.target.dataset.prop;
-            console.log("dataProp", dataProp);
-            this.select(dataProp);
         } 
+        else if(type == 'item'){
+            const dataProp = event.target.dataset.prop;
+            this.select(dataProp);
+        }
     }
 
     get isOpen(){
@@ -134,8 +116,7 @@ class SelectUI{
     }
 
     get current(){
-        // return this.options.data.find(item => item.id === this.selectedId);
-        return this.getData().find(item => item.id === this.selectedId);
+        return this.options.data.find(item => item.id === this.selectedId);
     }
 
     select(id, dataProp){
@@ -179,9 +160,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const selectInit = document.querySelector('.js-select');
     if(selectInit) {
         const selectInit = new SelectUI('.js-select', {
-            selectedId: '1',
-            onSelect(item) {
-                console.log('selected Item', item);
+            placeholder: 'Выберите элемент',
+            // selectedId: '2',
+            data: [
+                {id: '1', value: 'По популярности'},
+                {id: '2', value: 'По возрастанию цены'},
+                {id: '3', value: 'По возрастанию цены'},
+                {id: '4', value: 'По возрастанию цены'},
+                {id: '5', value: 'По возрастанию цены'},
+                {id: '6', value: 'По возрастанию цены'},
+                {id: '7', value: 'По возрастанию цены'},
+                {id: '8', value: 'По возрастанию цены'},
+            ],
+                onSelect(item){
+                // console.log('selected Item', item)
             }
         });
     }

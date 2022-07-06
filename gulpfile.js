@@ -19,9 +19,6 @@ const webpackStream = require('webpack-stream');
 const flatten = require('gulp-flatten');
 const concat = require('gulp-concat-css');
 const replace = require('gulp-replace');
-const rev_append = require('gulp-rev-append');
-const hash = require('gulp-hash');
-const inject = require('gulp-inject');
 
 const browserSync = require("browser-sync").create();
 
@@ -234,89 +231,6 @@ function jsVendor(){
         .pipe(dest(path.build.vendor));
 }
 
-function hashJS(cb) {
-    return gulp.src(path.src.js, { base: srcPath + 'assets/js/' })
-        .pipe(plumber({
-            errorHandler: function (err) {
-                notify.onError({
-                    title: "JS Error",
-                    message: "Error: <%= error.message %>"
-                })(err);
-                this.emit('end');
-            }
-        }))
-        .pipe(webpackStream({
-            mode: "development",
-            output: {
-                filename: 'app.js',
-            },
-            module: {
-                rules: [
-                    {
-                        test: /\.(js)$/,
-                        exclude: /(node_modules)/,
-                        loader: 'babel-loader',
-                        query: {
-                            presets: ['@babel/preset-env']
-                        }
-                    }
-                ]
-            }
-        }))
-        .pipe(hash()) 
-        .pipe(gulp.dest(path.build.js)) 
-        .pipe(hash.manifest('public/assets.json', { 
-            deleteOld: true,
-            sourceDir: __dirname + '/public/js'
-        }))
-        .pipe(gulp.dest('.'))
-        // .pipe(inject(jsStream, {ignorePath: 'dist/', addRootSlash: false, name: 'app'}))
-        // .pipe(gulp.dest('./dist'));
-
-    cb();
-}
-
-function hashCSS(cb) {
-    return gulp.src(path.src.css, { base: srcPath + "assets/scss/" })
-        .pipe(plumber({
-            errorHandler: function (err) {
-                notify.onError({
-                    title: "SCSS Error",
-                    message: "Error: <%= error.message %>"
-                })(err);
-                this.emit('end');
-            }
-        }))
-        .pipe(sass({
-            includePaths: './node_modules/'
-        }))
-        .pipe(rename({
-            suffix: ".min",
-            extname: ".css"
-        }))
-        .pipe(dest(path.build.css))
-        .pipe(hash()) 
-        .pipe(gulp.dest(path.build.css)) 
-        .pipe(hash.manifest('public/assets.json', { 
-            deleteOld: false,
-            sourceDir: __dirname + '/public/css'
-        }))
-        .pipe(gulp.dest('.'))
-
-    cb();
-}
-
-function assetsJs(cb) {
-    var assets = require('./public/assets.json');
-    return gulp.src('./dist/**/*.html')
-        .pipe(replace('app.js', assets['app.js']))
-        .pipe(replace('style.min.css', assets['style.min.css']))
-        .pipe(gulp.dest('dist'))
-        .pipe(browserSync.reload({ stream: true }));
-    
-    cb();
-}
-
 function images(cb) {
     return src(path.src.images)
         .pipe(imagemin([
@@ -352,22 +266,19 @@ function clean(cb) {
 
 function watchFiles() {
     gulp.watch([path.watch.html], html);
-    gulp.watch([path.watch.html], assetsJs);
-    gulp.watch([path.watch.css], hashCSS);
-    gulp.watch([path.watch.js], hashJS);
-    gulp.watch([path.watch.css, path.watch.js], assetsJs);
+    gulp.watch([path.watch.css], cssWatch);
+    gulp.watch([path.watch.js], jsWatch);
     gulp.watch([path.watch.vendor], jsVendor);
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
 }
 
 /* Собирает файлы для 1С Битрикс*/
-const build = gulp.series(clean, gulp.parallel(html, hashCSS, hashJS, jsVendor, images, fonts), assetsJs);
+const build = gulp.series(clean, gulp.parallel(html, css, js, jsVendor, images, fonts));
 
 /* Собирает файлы для Разработки и запускает watcher*/
 const dev = gulp.series(clean, gulp.parallel(html, css, js, images, fonts), cssReplaceAbsolute);
 const watch = gulp.parallel(build, watchFiles, serve);
-const _hash = gulp.parallel(hashJS, hashCSS, assetsJs);
 
 /* Exports Tasks */
 exports.html = html;
@@ -381,5 +292,3 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-exports.hashJS = hashJS;
-exports._hash = _hash;
