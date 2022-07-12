@@ -1,47 +1,6 @@
 const { data } = require("jquery");
 
-const getTemplate = (data = [], placeholder, selectedId, selectedDataProp) => {
-    let text = placeholder ?? 'Placeholder по умолч.';
-    
-    const items = data.map(item => {
-        let cls = '';
-
-        if(selectedDataProp === undefined) {
-            if(item.id === selectedId){                
-                text = item.value;
-                cls = 'selected';
-            }
-        } else {
-            if(item.dataProp === selectedDataProp){
-                text = item.value;
-                cls = 'selected';
-            }
-        }
-
-        return `
-            <li class="select-ui__item ${cls}" data-type="item" data-id=${item.id} data-prop="${item.dataProp}">${item.value}</li>
-        `
-    });
-
-    return `
-    <div class="select-ui__backdrop" data-type="backdrop"></div>
-    <div class="select-ui__input" data-type="input">
-        <span data-type="value">${text}</span>
-    </div>
-    <div class="select-ui__dropdown">
-        <ul class="select-ui__list">
-           ${items.join('')}
-        </ul>
-    </div>
-    `
-}
-
 const selectItem = (data, selectedId, selectedDataProp) => {
-    // let text = placeholder ?? 'Placeholder по умолч.';
-
-    console.log("data this", data)
-    console.log("selectedId this", selectedId)
-
     const items = data.map(item => {
         let cls = '';
 
@@ -88,13 +47,9 @@ class SelectUI{
     }
 
     render(){
-        // const {placeholder, data} = this.options;
         const {placeholder, data} = this.options;
         this.$el.classList.add('select-ui');
-        // this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId, this.selectedDataProp);
-        // this.hideFakeSelect();
         this.$el.innerHTML = selectItem(this.getData(), this.selectedId);
-
     }
 
     getData() {
@@ -134,7 +89,6 @@ class SelectUI{
     }
 
     get current(){
-        // return this.options.data.find(item => item.id === this.selectedId);
         return this.getData().find(item => item.id === this.selectedId);
     }
 

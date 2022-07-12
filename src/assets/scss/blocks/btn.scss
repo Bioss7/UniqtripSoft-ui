@@ -32,6 +32,10 @@
         outline-offset: 0;
     }
 
+    &:disabled {
+        background: #093b60;
+    }
+
     &--white {
         padding: 16px 48px;
 

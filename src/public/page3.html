@@ -527,7 +527,20 @@ title: Page 3
             </div>
             <div class="form__group form__group--note">
                 <label for="">Выберите нужный вам пакет внедрения </label>
-                <div class="js-select"></div>
+                <div class="js-select select-ui">
+                    <div class="select-ui__backdrop" data-type="backdrop"></div>
+                    <div class="select-ui__input" data-type="input">
+                        <span data-type="value">Выберите элемент</span>
+                    </div>
+                    <div class="select-ui__dropdown">
+                        <ul class="select-ui__list">
+                            <li class="select-ui__item " data-type="item" data-id="1" data-prop="1">Кот</li>
+                            <li class="select-ui__item " data-type="item" data-id="2" data-prop="2">Кот 1</li>
+                            <li class="select-ui__item " data-type="item" data-id="3" data-prop="3">Кот 2</li>
+                            <li class="select-ui__item " data-type="item" data-id="4" data-prop="4">Кот 3</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="form__note">
                 *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>

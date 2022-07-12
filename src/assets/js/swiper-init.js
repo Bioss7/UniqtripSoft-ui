@@ -1,7 +1,13 @@
 import Swiper from 'swiper';
 
+const sliderSwiper = '.js-slider-swiper';
+const sliderSwiperMobile = '.js-slider-swiper-mobile';
+const sliderSwiperProject = '.js-slider-swiper-project';
+const sliderSwiperIntro = '.js-intro-slider';
+const sliderSwiperPeople = '.js-slider-swiper-people';
+
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.js-slider-swiper', {
+    const swiper = new Swiper(sliderSwiper, {
         slidesPerView: 1,
         spaceBetween: 30,
         slideToClickedSlide: true,
@@ -16,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    const swiperMobile = new Swiper('.js-slider-swiper-mobile', {
+    const swiperMobile = new Swiper(sliderSwiperMobile, {
         slidesPerView: 3,
         slidesPerView: 'auto',
         spaceBetween: 30,
@@ -44,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    const swiperProject = new Swiper('.js-slider-swiper-project', {
+    const swiperProject = new Swiper(sliderSwiperProject, {
         slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
@@ -66,11 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    const swiperIntro = new Swiper('.js-intro-slider', {
+    const swiperIntro = new Swiper(sliderSwiperIntro, {
         slidesPerView: 1,
     });
 
-    const swipperPeople = new Swiper('.js-slider-swiper-people', {
+    const swipperPeople = new Swiper(sliderSwiperPeople, {
         slidesPerView: 4,
         spaceBetween: 30,
         slidesPerView: 'auto',
@@ -84,7 +90,5 @@ document.addEventListener('DOMContentLoaded', function() {
             prevEl: '.js-btn-prev'
         },
     });
-
-
 });
 

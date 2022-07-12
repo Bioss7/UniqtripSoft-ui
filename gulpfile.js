@@ -202,18 +202,18 @@ function jsWatch(cb) {
             output: {
                 filename: 'app.js',
             },
-            module: {
-                rules: [
-                    {
-                        test: /\.(js)$/,
-                        exclude: /(node_modules)/,
-                        loader: 'babel-loader',
-                        query: {
-                            presets: ['@babel/preset-env']
-                        }
-                    }
-                ]
-            }
+            // module: {
+            //     rules: [
+            //         {
+            //             test: /\.(js)$/,
+            //             exclude: /(node_modules)/,
+            //             loader: 'babel-loader',
+            //             query: {
+            //                 presets: ['@babel/preset-env']
+            //             }
+            //         }
+            //     ]
+            // }
         }))
         .pipe(dest(path.build.js))
         .pipe(browserSync.reload({ stream: true }));

@@ -81,28 +81,28 @@ title: Page 5
 <section class="section">
     <div class="container">
         <h2 class="title">Понравился проект? <br>Будем рады поработать над вашим проектом!</h2>
-        <form class="form form--orange" action="/" method="post">
+        <form class="form-js form form--orange" action="/feedback">
             <div class="form__inner form__inner--orange">
                 <div class="form__group">
                     <label for="email">E-mail</label>
-                    <input class="form__control" id="email" type="text" placeholder="Ваш e-mail">
+                    <input class="form__control js-req js-email" id="email" type="text" placeholder="Ваш e-mail" name="email">
                 </div>
                 <div class="form__group">
                     <label for="name">Ваше имя</label>
-                    <input class="form__control" id="name" type="text" placeholder="Ваш имя">
+                    <input class="form__control js-req" id="name" type="text" placeholder="Ваш имя" name="name">
                 </div>
             </div>
             <div class="form__group form__group--note">
                 <label for="" id="message">Сообщение</label>
-                <textarea class="form__control form__control--textarea" id="message" type="text" placeholder="Напишите нам"></textarea>
+                <textarea class="form__control form__control--textarea js-req" id="message" type="text" placeholder="Напишите нам" name="message"></textarea>
             </div>
             <div class="form__note">
                 *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
             </div>
            
            
-            <div class="form__group form__group--btn">
-                <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+            <div class="form__group form__group--btn loader-btn">
+                <button class="btn btn--blue" type="submit" value="Отправить">Отправить</button>
             </div>
         </form>
     </div>
