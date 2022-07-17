@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const requestURL =  'https://uniqtrip.tmweb.ru/search';
+    const requestURL = 'https://uniqtrip.tmweb.ru/search';
     const searchInput = document.querySelector('.js-search-input');
     const searchList = document.querySelector('.js-search-list');
     const loader = document.createElement('div');
@@ -58,7 +58,7 @@ const debounce = (fn, ms) => {
         const fnCall = () => { fn.apply(this, arguments) }
 
         clearTimeout(timeout);
-
+        
         timeout = setTimeout(fnCall, ms)
     };
 }
