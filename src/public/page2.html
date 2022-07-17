@@ -62,7 +62,7 @@ title: Page 2
                                     NEW CRM - маркетинг позволяет легко работать с большой клиентской Базовый
                                     CRM-аналитика контролирует эффективность ваших менеджеров.
                                 </div>
-                                <a class="btn btn--blue request__btn" href="#">Оставить заявку</a>
+                                <button class="btn btn--blue request__btn" type="button" data-modal="js-form-modal">Оставить заявку</button>
                             </div>
                             <div class="request__item">
                                 <div class="request__wrapper">
@@ -516,49 +516,7 @@ title: Page 2
                 </div>
             </section>
             
-            <!-- Форма Заказать пакет внедрения -->
-            <section class="section section--form">
-                <div class="container">
-                    <h2 class="title">Заказать пакет внедрения</h2>
-                    <form class="form-js form form--orange" action="https://uniqtrip.tmweb.ru/feedback">
-                        <div class="form__inner form__inner--orange">
-                            <div class="form__group">
-                                <label for="">E-mail</label>
-                                <input class="form__control js-req js-email" type="text" placeholder="Ваш e-mail" name="email">
-                            </div>
-                            <div class="form__group">
-                                <label for="">Ваше имя</label>
-                                <input class="form__control js-req" type="text" placeholder="Ваш имя" name="name">
-                            </div>
-                        </div>
-                        <div class="form__group form__group--note">
-                            <label for="">Выберите нужный вам пакет внедрения </label>
-                            <div class="js-select select-ui">
-                                <div class="select-ui__backdrop" data-type="backdrop"></div>
-                                <div class="select-ui__input" data-type="input">
-                                    <span data-type="value" name="select">Выберите элемент</span>
-                                </div>
-                                <div class="select-ui__dropdown">
-                                    <ul class="select-ui__list">
-                                        <li class="select-ui__item " data-type="item" data-id="1" data-prop="1">Кот</li>
-                                        <li class="select-ui__item " data-type="item" data-id="2" data-prop="2">Кот 1</li>
-                                        <li class="select-ui__item " data-type="item" data-id="3" data-prop="3">Кот 2</li>
-                                        <li class="select-ui__item " data-type="item" data-id="4" data-prop="4">Кот 3</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form__note">
-                            *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
-                        </div>
-                        
-                        <div class="form__group form__group--btn loader-btn">
-                            <button class="btn btn--blue" type="submit">Отправить</button>
-                            <!-- <div class="loader"></div> -->
-                        </div>
-                    </form>
-                </div>
-            </section>
+           
             
         </div>
 
@@ -1041,7 +999,7 @@ title: Page 2
             </section>
             
             <!-- Форма Заказать пакет внедрения -->
-            <section class="section section--form">
+            <!-- <section class="section section--form">
                 <div class="container">
                     <h2 class="title">Заказать пакет внедрения</h2>
                     <form class="form form--orange" action="/" method="post">
@@ -1068,7 +1026,7 @@ title: Page 2
                         </div>
                     </form>
                 </div>
-            </section>
+            </section> -->
             
         </div>
 
@@ -1084,27 +1042,27 @@ title: Page 2
 
         </div>
     </div>
-    <!-- Форма Заказать пакет внедрения -->
-    <!-- <section class="section section--form">
+     <!-- Форма Заказать пакет внедрения -->
+     <section class="section section--form">
         <div class="container">
             <h2 class="title">Заказать пакет внедрения</h2>
-            <form class="form form--orange" action="#">
+            <form class="js-form form form--orange" action="https://uniqtrip.tmweb.ru/feedback">
                 <div class="form__inner form__inner--orange">
                     <div class="form__group">
                         <label for="">E-mail</label>
-                        <input class="form__control" type="text" placeholder="Ваш e-mail">
+                        <input class="form__control js-req js-email" type="text" placeholder="Ваш e-mail" name="email">
                     </div>
                     <div class="form__group">
                         <label for="">Ваше имя</label>
-                        <input class="form__control" type="text" placeholder="Ваш имя">
+                        <input class="form__control js-req" type="text" placeholder="Ваш имя" name="name">
                     </div>
                 </div>
                 <div class="form__group form__group--note">
                     <label for="">Выберите нужный вам пакет внедрения </label>
-                    <div class="js-select select-ui">
+                    <div class="js-select select-ui" data-select="select-2">
                         <div class="select-ui__backdrop" data-type="backdrop"></div>
                         <div class="select-ui__input" data-type="input">
-                            <span data-type="value">Выберите элемент</span>
+                            <span data-type="value" name="select">Выберите элемент</span>
                         </div>
                         <div class="select-ui__dropdown">
                             <ul class="select-ui__list">
@@ -1120,12 +1078,56 @@ title: Page 2
                     *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
                 </div>
                 
-                <div class="form__group form__group--btn">
-                    <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                <div class="form__group form__group--btn loader-btn js-loader">
+                    <button class="btn btn--blue" type="submit">Отправить</button>
                 </div>
             </form>
         </div>
-    </section> -->
+    </section>
 </div>
 
 
+<div class="modal js-form-modal">
+    <div class="modal__content">
+        <button class="modal__close" type="button">
+        </button>
+
+        <form class="js-form form form--orange" action="https://uniqtrip.tmweb.ru/feedback" data-form="form-send">
+            <div class="form__inner form__inner--orange">
+                <div class="form__group">
+                    <label for="">E-mail</label>
+                    <input class="form__control js-req js-email" type="text" placeholder="Ваш e-mail" name="email">
+                </div>
+                <div class="form__group">
+                    <label for="">Ваше имя</label>
+                    <input class="form__control js-req" type="text" placeholder="Ваш имя" name="name">
+                </div>
+            </div>
+            <div class="form__group form__group--note">
+                <label for="">Выберите нужный вам пакет внедрения </label>
+                <div class="js-select select-ui" data-select="select-1">
+                    <div class="select-ui__backdrop" data-type="backdrop"></div>
+                    <div class="select-ui__input" data-type="input">
+                        <span data-type="value" name="select">Выберите элемент</span>
+                    </div>
+                    <div class="select-ui__dropdown">
+                        <ul class="select-ui__list">
+                            <li class="select-ui__item " data-type="item" data-id="1" data-prop="1">Кот</li>
+                            <li class="select-ui__item " data-type="item" data-id="2" data-prop="2">Кот 1</li>
+                            <li class="select-ui__item " data-type="item" data-id="3" data-prop="3">Кот 2</li>
+                            <li class="select-ui__item " data-type="item" data-id="4" data-prop="4">Кот 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form__note">
+                *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
+            </div>
+            
+            <div class="form__group form__group--btn loader-btn js-loader">
+                <button class="btn btn--blue" type="submit">Отправить</button>
+            </div>
+        </form>
+
+    </div>
+</div>

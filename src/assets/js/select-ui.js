@@ -36,7 +36,7 @@ const selectItem = (data, selectedId, selectedDataProp) => {
 
 class SelectUI{
     constructor(selector, options){
-        this.$el = document.querySelector(selector);
+        this.$el = selector;
         this.options = options;
         this.selectedId = options.selectedId;
         this.selectedDataProp = options.selectedDataProp;
@@ -130,15 +130,15 @@ class SelectUI{
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const selectInit = document.querySelector('.js-select');
-    if(selectInit) {
-        const selectInit = new SelectUI('.js-select', {
-            selectedId: '1',
-            onSelect(item) {
-                console.log('selected Item', item);
-            }
-        });
-    }
+    let getSelector = document.querySelectorAll('.js-select');
+        getSelector.forEach(element => {
+            const selectInit = new SelectUI(element, {
+                selectedId: '1',
+                onSelect(item) {
+                    console.log('selected Item', item);
+                }
+            });
+        })
 });
 
 

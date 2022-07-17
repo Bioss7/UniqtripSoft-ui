@@ -1,20 +1,24 @@
 .info-page {
+    padding: 80px 0;
 }
 
 .info-page__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+
+    @include breakpoint(1200px) {
+        flex-direction: column;
+    }
 }
 
 .info-page__item {
-    
-    &--text {
-        width: 40%;
-    }
+    padding: 0 15px;
+    width: 50%;
 
-    &--img {
-        width: 60%;
+    @include breakpoint(1200px) {
+        width: 100%;
     }
 }
 
@@ -24,6 +28,12 @@
     font-weight: 700;
     line-height: 85px;
     color: #2C3136;
+
+    @include breakpoint($bp-991) {
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 48px;
+    }
 }
 
 .info-page__text {
@@ -32,20 +42,46 @@
     font-weight: 400;
     line-height: 42px;
     color: #2C3136;
+
+    @include breakpoint($bp-991) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
 }
 
 .info-page-links {
     a {
+        display: block;
         font-size: 30px;
         font-weight: 400;
         line-height: 42px;
+
         color: #2C3136;
 
         &:first-child {
             margin-bottom: 5px;
         }
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        @include breakpoint($bp-991) {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+        }
     }
 }
 
 .info-page__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+
+    @include breakpoint(1200px) { 
+        max-width: 100%;
+    }
 }
