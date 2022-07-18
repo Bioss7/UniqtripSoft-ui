@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
             sendRequest('GET', requestURL, val)
                 .then(data => {
-                    
                     emptyArray = data.filter(item => {
                         if(item.label.search(RegExp(val,"gi")) !== -1 || item.text.search(RegExp(val,"gi")) !== -1 || item.keywords.search(RegExp(val,"gi")) !== -1) {
                             return item;
