@@ -7,12 +7,8 @@ btn.forEach(elem => elem.addEventListener('click', event => {
     
     projectItems.forEach(elem => {
         elem.classList.remove('hide');
-        console.log(elem.getAttribute('data-tag'));
         if(elem.getAttribute('data-tag') !== filterClass && filterClass !== 'Все') {
             elem.classList.add('hide');
         }
-        // if(!elem.classList.contains(filterClass) && filterClass !== 'js-all') {
-        //     elem.classList.add('hide');
-        // }
     });
 }));

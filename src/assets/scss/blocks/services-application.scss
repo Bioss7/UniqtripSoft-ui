@@ -49,9 +49,15 @@
     line-height: 27px;
 
     ul {
-        padding-left: 25px;
+        padding-left: 10px;
+
         li {
-            list-style: disc;
+            list-style-type: disc;
+            list-style-position: inside;
+            
+            &::marker {
+                content: "•";
+            }
         }
     }
 
