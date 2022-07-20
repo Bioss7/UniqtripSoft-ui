@@ -2,8 +2,7 @@ class Form {
     constructor(selector, options) {
         this.form = selector;
         if(!this.form) return;
-        this.btnInner = this.form.querySelector('.js-loader');
-        this.btn = this.btnInner.querySelector('button');
+        this.btn = this.form.querySelector('.js-loader');
         this.loader = document.createElement('div');
         this.loader.classList.add('loader');
         this.setup();
@@ -20,7 +19,7 @@ class Form {
 
         let formData = new FormData(this.form);
         if(this.form.querySelector('[data-type="value"]')) {
-            formData.append('select', document.querySelector('[data-type="value"]').innerText);
+            formData.append('select', this.form.querySelector('[data-type="value"]').innerText);
         }
 
         let body = new Object;
@@ -30,9 +29,11 @@ class Form {
             body[name] = value;
         }
 
+        console.log("body: ", body)
+
         if(error === 0) {
             const that = this;
-            this.btnInner.append(this.loader);
+            this.btn.append(this.loader);
             this.btn.disabled = true;
 
             function sendRequest(method, url, body = null) {

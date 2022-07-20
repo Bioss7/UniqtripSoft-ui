@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const requestURL = 'https://uniqtrip.tmweb.ru/search';
+    const requestURL = 'https://uniqtrip.tmweb.ru/search?term=';
     const searchInput = document.querySelector('.js-search-input');
     const searchList = document.querySelector('.js-search-list');
     const loader = document.createElement('div');
@@ -14,23 +14,30 @@ document.addEventListener("DOMContentLoaded", function() {
    
     function onChange() {
         let val = this.value.trim();
-        let emptyArray = [];
+        window.searchString = '';
+        let getArray = [];
+        let fakeArray = [
+            {keywords: '', label: 'Главная', text: '', url: '/'},
+            {keywords: '', label: 'создание сайтов', text: 'разработка сайтов', url: '/ra'}
+        ];
 
         if(val != '' & val.length >= 3) {
             searchInput.after(loader);
-        
-            sendRequest('GET', requestURL, val)
-                .then(data => {
-                    emptyArray = data.filter(item => {
-                        if(item.label.search(RegExp(val,"gi")) !== -1 || item.text.search(RegExp(val,"gi")) !== -1 || item.keywords.search(RegExp(val,"gi")) !== -1) {
-                            return item;
-                        }
-                    });
 
-                    if(emptyArray.length >= 1) {
-                        for(let i = 0; i < emptyArray.length; i++) {
-                            searchList.innerHTML = "";
-                            searchList.innerHTML += `<li class="search__item"><a href="${emptyArray[i].url}">${emptyArray[i].label}</a></li>`;
+            searchString = requestURL + val;
+            searchString = searchString.replace(/\s/g, "+");
+            console.log("searchString:", searchString);
+        
+            sendRequest('GET', searchString, val)
+                .then(data => {
+                    getArray = data.map(item => {
+                        return item;
+                    });
+                    
+                    if(getArray.length >= 1) {
+                        searchList.innerHTML = "";
+                        for(let i = 0; i < getArray.length; i++) {
+                            searchList.innerHTML += `<li class="search__item"><a href="${getArray[i].url}">${getArray[i].label}</a></li>`;
                             loader.remove();
                         }
                     } else {

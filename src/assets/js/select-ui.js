@@ -1,5 +1,3 @@
-const { data } = require("jquery");
-
 const selectItem = (data, selectedId, selectedDataProp) => {
     const items = data.map(item => {
         let cls = '';
@@ -54,7 +52,7 @@ class SelectUI{
 
     getData() {
         let data = [];
-        let selectList = document.querySelector('.select-ui__list').querySelectorAll('.select-ui__item');
+        let selectList = this.$el.querySelector('.select-ui__list').querySelectorAll('.select-ui__item');
         selectList.forEach((item) => {
             data.push({id: item.dataset.id, dataProp: item.dataset.prop, value: item.innerText});
         });
@@ -132,7 +130,7 @@ class SelectUI{
 document.addEventListener("DOMContentLoaded", function() {
     let getSelector = document.querySelectorAll('.js-select');
         getSelector.forEach(element => {
-            const selectInit = new SelectUI(element, {
+            new SelectUI(element, {
                 selectedId: '1',
                 onSelect(item) {
                     console.log('selected Item', item);

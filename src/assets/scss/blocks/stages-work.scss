@@ -30,13 +30,21 @@
 .stages-work__link {
     text-decoration: none;
 
+    &:hover {
+        cursor: inherit;
+    }
+
     &:hover .stages-work__content {
-        background: linear-gradient(133.93deg, #fda05d 15.61%, #febb02 85.11%);
+        // background: linear-gradient(133.93deg, #fda05d 15.61%, #febb02 85.11%);
         box-shadow: 0px 16px 24px -8px #eb652c33;
 
         &::after {
             background: #ffd151;
             opacity: 0.08;
+        }
+
+        &::before {
+            opacity: 1;
         }
     }
 }
@@ -57,6 +65,22 @@
     border-radius: 50%;
     box-shadow: 0px 16px 24px -8px #AFAFAF33;
     position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(133.93deg, #fda05d 15.61%, #febb02 85.11%);
+        border-radius: 50%;
+        transition: opacity 0.5s ease-in-out;
+        z-index: -1;
+    }
 
     &::after{
         content: "";

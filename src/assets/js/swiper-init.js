@@ -1,25 +1,30 @@
-import Swiper from 'swiper';
-
-const sliderSwiper = '.js-slider-swiper';
-const sliderSwiperMobile = '.js-slider-swiper-mobile';
-const sliderSwiperProject = '.js-slider-swiper-project';
-const sliderSwiperIntro = '.js-intro-slider';
-const sliderSwiperPeople = '.js-slider-swiper-people';
+import Swiper from 'swiper/swiper-bundle';
 
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper(sliderSwiper, {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        slideToClickedSlide: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.js-btn-next',
-            prevEl: '.js-btn-prev'
-        },
+    const sliderSwiper = '.js-slider-swiper';
+    const sliderSwiperMobile = '.js-slider-swiper-mobile';
+    const sliderSwiperProject = '.js-slider-swiper-project';
+    const sliderSwiperIntro = '.js-intro-slider';
+    const sliderSwiperPeople = '.js-slider-swiper-people';
+
+    document.querySelectorAll(sliderSwiper).forEach(item => {
+        new Swiper(item, {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slideToClickedSlide: true,
+            observer: true,
+            observeParents: true,
+            
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.js-btn-next',
+                prevEl: '.js-btn-prev'
+            },
+        });
     });
 
     const swiperMobile = new Swiper(sliderSwiperMobile, {

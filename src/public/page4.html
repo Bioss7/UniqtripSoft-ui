@@ -9,13 +9,16 @@ title: Page 4
         <div class="title text-center">Проекты</div>
         <div class="tabs-ui">
             <ul class="tabs-ui__inner">
-                <li class="tabs-ui__item">
+                <li class="tabs-ui__item" data-filter="Все">
+                    <a class="tabs-ui__btn" href="#">Все</a>
+                </li>
+                <li class="tabs-ui__item" data-filter="Туризм">
                     <a class="tabs-ui__btn" href="#">Туризм</a>
                 </li>
-                <li class="tabs-ui__item">
+                <li class="tabs-ui__item" data-filter="Бизнес">
                     <a class="tabs-ui__btn tabs-ui__btn--active" href="#">Гостиничный бизнес</a>
                 </li>
-                <li class="tabs-ui__item">
+                <li class="tabs-ui__item" data-filter="Производство">
                     <a class="tabs-ui__btn" href="#">Производство</a>
                 </li>
             </ul>
@@ -23,121 +26,134 @@ title: Page 4
 
         <div class="projects">
             <div class="projects__inner">
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/01.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                Krasnayapolyanaresort.ru 
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                <div class="projects__item js-tourism" data-tag="Туризм">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/01.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    Krasnayapolyanaresort.ru
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/02.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                Visit-sochi.com 
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                <div class="projects__item js-tourism" data-tag="Туризм">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/02.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    Visit-sochi.com
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/03.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                Mantera group
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий 
+                <div class="projects__item js-production" data-tag="Производство">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/03.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    Mantera group
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/04.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                Сочи Парк
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий 
+                <div class="projects__item js-business" data-tag="Бизнес">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/04.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    Сочи Парк
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/05.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                NEDVEX GROUP Гостиничный оператор
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий 
+                <div class="projects__item js-production" data-tag="Производство">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/05.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    NEDVEX GROUP Гостиничный оператор
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/06.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                Племенной форолеводческий завод “Адлер”
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий 
+                <div class="projects__item js-production" data-tag="Производство">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/06.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    Племенной форолеводческий завод “Адлер”
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="projects__item">
-                    <div class="projects__card" style="background-image: url('/assets/images/project/07.png');">
-                        <div class="projects__content">
-                            <div class="projects__title">
-                                Лоо-Арена
-                            </div>
-                            <div class="projects__text">
-                                Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий 
+                <div class="projects__item js-production" data-tag="Производство">
+                    <a class="projects__link" href="https://krasnayapolyanaresort.ru" target="_blank">
+                        <div class="projects__card" style="background-image: url('/assets/images/project/07.png');">
+                            <div class="projects__content">
+                                <div class="projects__title">
+                                    Лоо-Арена
+                                </div>
+                                <div class="projects__text">
+                                    Создание официального портал города Сочи, который удовлетворит все потребности туриста: от бронирования размещения, до заказа экскурсий и гастрономических путешествий
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- У вас есть проект или идея? Напишите нам, мы подберем для вас лучшее предложение -->
+<!-- feedback -->
 <section class="section">
     <div class="container">
         <h2 class="title title--mobile">У вас есть проект или идея?<br> Напишите нам, мы подберем для вас лучшее предложение</h2>
-        <form class="form form--orange" action="/" method="post">
+        <form class="js-form form form--orange" action="https://uniqtrip.tmweb.ru/feedback">
             <div class="form__inner form__inner--orange">
                 <div class="form__group">
                     <label for="email">E-mail</label>
-                    <input class="form__control" id="email" type="text" placeholder="Ваш e-mail">
+                    <input class="form__control js-req js-email" id="email" type="text" placeholder="Ваш e-mail" name="email">
                 </div>
                 <div class="form__group">
                     <label for="name">Ваше имя</label>
-                    <input class="form__control" id="name" type="text" placeholder="Ваш имя">
+                    <input class="form__control js-req" id="name" type="text" placeholder="Ваш имя" name="name">
                 </div>
             </div>
             <div class="form__group form__group--note">
                 <label for="" id="message">Сообщение</label>
-                <textarea class="form__control form__control--textarea" id="message" type="text" placeholder="Напишите нам"></textarea>
+                <textarea class="form__control form__control--textarea js-req" id="message" type="text" placeholder="Напишите нам" name="message"></textarea>
             </div>
             <div class="form__note">
                 *Нажимая кнопку, вы даете свое согласие на обработку <a href="#">персональных данных</a>
             </div>
            
-           
             <div class="form__group form__group--btn">
-                <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
             </div>
         </form>
     </div>

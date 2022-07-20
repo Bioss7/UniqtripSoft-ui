@@ -1,6 +1,10 @@
 .projects {
 }
 
+.projects__link {
+    text-decoration: none;
+}
+
 .projects__inner {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +15,11 @@
     width: 50%;
     padding: 0 10px;
     margin-bottom: 20px;
+
+    &.hide {
+        display: none;
+    }
+        
 
     &:last-child {
         margin-bottom: 0;

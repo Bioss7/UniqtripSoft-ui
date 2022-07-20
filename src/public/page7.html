@@ -38,22 +38,19 @@ title: Page 7
                                 <img class="contacts-icon" src="/assets/images/phone-black.svg" alt="">
                                 +7 (862) 277 70 42
                             </a>
-                            <a class="contacts-link" href="mailto:info@designmodo.com">
+                            <a class="contacts-link" href="mailto:info@uniqtripsoft.ru">
                                 <img class="contacts-icon" src="/assets/images/mail-black.svg" alt="">
-                                info@designmodo.com
+                                info@uniqtripsoft.ru
                             </a>
                         </div>
                         <div class="feedback__subtitle">
                             Найдите нас на карте
                         </div>
-                        <div class="feedback__address">
-                            Главный офис: г. Сочи, Олимпийский проспект, 21 , помещение 350 
-                        </div>
+                        
                         <div class="feedback__address feedback__address--map">
-                            Отдел продаж: г. Сочи, Триумфальный проезд,1 , офис 2-021
+                            Главный офис г. Сочи, Триумфальный проезд,1 , офис 2-021
                         </div>
                         <div class="js-map feedback__map" id="js-map">
-
                         </div>
                     </div>
                 </div>
@@ -64,23 +61,23 @@ title: Page 7
                     <div class="feedback__text feedback__text--forms">
                         Мы всегда ищем следующий отличный проект.
                     </div>
-                    <form class="form form--feedback" action="/" method="post">
+                    <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
                         <div class="form__group">
                             <label for="">E-mail</label>
-                            <input class="form__control" type="text" placeholder="Ваш e-mail">
+                            <input class="form__control js-req js-email" type="text" placeholder="Ваш e-mail" name="email">
                         </div>
                         <div class="form__group">
                             <label for="">Cообщение</label>
-                            <textarea class="form__control form__control--textarea" type="text" placeholder="Напишите нам"></textarea>
+                            <textarea class="form__control form__control--textarea js-req" type="text" placeholder="Напишите нам" name="message"></textarea>
                         </div>
                         <div class="form__group">
                             <label for="">Ваше имя</label>
                             <div class="form__inner form__inner--feedback">
                                 <div class="form__group form__group--feedback-input">
-                                    <input class="form__control" type="text" placeholder="Имя">
+                                    <input class="form__control js-req" type="text" placeholder="Имя" name="name">
                                 </div>
                                 <div class="form__group form__group--feedback-btn">
-                                    <button class="btn btn--blue" type="button" value="Отправить">Отправить</button>
+                                    <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
                                 </div>
                             </div>
                         </div>

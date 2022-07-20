@@ -160,7 +160,7 @@
         margin-bottom: 20px;
     }
 
-    @include breakpoint($bp-575) {
+    @include breakpoint(1200px) {
         &--feedback-input {
             width: 100%;
         }

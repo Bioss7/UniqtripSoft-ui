@@ -25,13 +25,18 @@
 
 }
 
-.about-project__link {
+.about-project__subtitle{
     margin-bottom: 50px;
 
-    @include breakpoint($bp-991) {
-        margin-bottom: 6px;
-        color: #0071c2;
-    }
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-decoration: underline;
+
+    // @include breakpoint($bp-991) {
+    //     margin-bottom: 6px;
+    //     color: #0071c2;
+    // }
 }
 
 .about-project__mobile-text {
