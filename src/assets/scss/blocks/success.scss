@@ -32,6 +32,7 @@
         display: block;
         max-width: 100%;
         height: auto;
+        user-select: none;
 
         @include breakpoint($bp-575) { 
             height: 80px;
