@@ -126,7 +126,7 @@
 
 .slider-buttons {
 
-    @include breakpoint(1400px) {
+    @include breakpoint(991px) {
         display: none;
     }
 

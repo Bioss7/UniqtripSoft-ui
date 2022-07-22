@@ -16,10 +16,14 @@ class Form {
         e.preventDefault();
         let error = this.formValidate(this.form);
         let requestURL = this.form.getAttribute("action");
-
         let formData = new FormData(this.form);
+
         if(this.form.querySelector('[data-type="value"]')) {
             formData.append('select', this.form.querySelector('[data-type="value"]').innerText);
+        }
+
+        if(this.form.querySelector('input[name=phone]')) {
+            formData.append('phone', this.form.querySelector('input[name=phone]').value.trim().replace(/[^0-9]/g, ''));
         }
 
         let body = new Object;
@@ -82,16 +86,27 @@ class Form {
             const input = formReq[i];
             this.formRemoveError(input);
 
+            // if(this.phoneTest(input)) {
+            //     this.formAddError(input);
+            //     error++;
+            // } 
+
+
             if(input.classList.contains('js-email')) {
                 if(this.emailTest(input)) {
                     this.formAddError(input);
                     error++;
                 } 
+            } else if(input.classList.contains('js-phone')) { 
+                if(this.phoneTest(input)) {
+                    this.formAddError(input);
+                    error++;
+                }
             } else {
               if(input.value === '') {
                 this.formAddError(input);
                 error++;
-              }  
+              } 
             }
         }
         return error;
@@ -109,6 +124,10 @@ class Form {
 
     emailTest(input) {
         return !/^\w+([\.-]?\w)*@\w+([\.-]?\w)*(\.\w{2,8})+$/.test(input.value);
+    }
+
+    phoneTest(input) {
+        return input.value.trim().replace(/[^0-9]/g, '').length < 11;
     }
 
 }

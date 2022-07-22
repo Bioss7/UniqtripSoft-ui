@@ -156,10 +156,6 @@
        display: block;
     }
 
-    @include breakpoint($bp-575) {
-        margin-bottom: 20px;
-    }
-
     @include breakpoint(1200px) {
         &--feedback-input {
             width: 100%;
@@ -173,6 +169,19 @@
             }
         }
     }
+
+    @include breakpoint($bp-767) {
+        &--contact {
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint($bp-575) {
+        margin-bottom: 20px;
+    }
+
 }
 
 .form__inner {

@@ -47,16 +47,16 @@
                     <div class="footer-nav__title">Компания</div>
                     <ul class="footer-nav__list">
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link" href="#">Команда</a>
+                            <a class="footer-nav__link" href="/our-team.html">Команда</a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link" href="#">Вакансии</a>
+                            <a class="footer-nav__link" href="https://sochi.hh.ru/employer/4322397">Вакансии</a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link" href="#">Проекты</a>
+                            <a class="footer-nav__link" href="/projects.html">Проекты</a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link" href="#">Контакты</a>
+                            <a class="footer-nav__link" href="/contact-us.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,7 +66,7 @@
                     <div class="footer-nav__title">Поддержка</div>
                     <ul class="footer-nav__list">
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link" href="#">Заказать звонок </a>
+                            <button class="footer-nav__link" type="button" data-modal="js-form-modal-contact">Заказать звонок</button>
                         </li>
                     </ul>
                 </nav>
@@ -74,3 +74,37 @@
         </div>
     </div>
 </footer>
+
+<!-- modal -->
+<div class="container">
+    <div class="modal js-form-modal-contact">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+            </button>
+
+            <form class="js-form form form--feedback" action="https://uniqtrip.tmweb.ru/feedback">
+                <div class="form__group">
+                    <label for="">E-mail</label>
+                    <input class="form__control js-req js-email" type="email" placeholder="Ваш e-mail" name="email" required>
+                </div>
+                <div class="form__group">
+                    <label for="">Ваше имя</label>
+                    <input class="form__control js-req" type="text" placeholder="Имя" name="name">
+                </div>
+                <div class="form__group">
+                    <label for="">Телефон</label>
+                    <input class="form__control js-req js-phone" type="text" name="phone">
+                </div>
+                <div class="form__group">
+                    <label for="">Cообщение</label>
+                    <textarea class="form__control form__control--textarea js-req" type="text"
+                        placeholder="Напишите нам" name="message"></textarea>
+                </div>
+                <div class="form__group form__group--btn form__group--contact">
+                    <button class="btn btn--blue js-loader" type="submit" value="Отправить">Отправить</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

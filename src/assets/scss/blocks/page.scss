@@ -3,7 +3,7 @@
     padding: 0 20px;
 
     &--mobile {
-        @include breakpoint($bp-991) {
+        @include breakpoint($bp-767) {
             max-width: 100%;
             padding: 0;
         }

@@ -160,7 +160,7 @@
 }
 
 .search__input {
-    max-width: 50px;
+    max-width: 100%;
     padding-right: 5px;
     border: none;
     background: inherit;
@@ -170,13 +170,12 @@
     line-height: 1.1;
     color: #727272;
 
-    &:focus {
-        max-width: 100%;
+    // &:focus {
 
-        & ~ .search__dropdown {
-            display: block;
-        }
-    }
+    //     & ~ .search__dropdown {
+    //         display: block;
+    //     }
+    // }
 }
 
 .search__dropdown {

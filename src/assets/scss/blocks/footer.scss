@@ -64,12 +64,20 @@
 }
 
 .footer-nav__link {
+    padding: 0;
+
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     color: #fff;
-
     text-decoration: none;
+
+    border: none;
+    background: transparent;
+
+    &:hover {
+        color: #a2a1a1;
+    }
 }
 
 
