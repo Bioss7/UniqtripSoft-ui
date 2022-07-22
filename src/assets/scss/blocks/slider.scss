@@ -154,6 +154,12 @@
             display: none;
         }
     }
+
+    @include breakpoint(1200px) {
+        &--mobile {
+            display: none;
+        }
+    }
 }
 
 .swiper-button-prev.swiper-button-prev-arrow,
@@ -256,3 +262,29 @@
 .slider-swiper-final-design {
     margin-bottom: 77px;
 }
+
+.item-final-design {
+    @include breakpoint(1400px) {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint(1200px) {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+.item-mobile {
+    @include breakpoint(1400px) {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint(1200px) {
+        max-width: 100%;
+    }
+}
+
+
+
