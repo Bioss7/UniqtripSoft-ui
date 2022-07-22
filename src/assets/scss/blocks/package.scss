@@ -47,11 +47,11 @@
         & .package__title,
         .package__price,
         .package__text,
-        .package__link {
+        .package__btn {
             color: #fff;
         }
 
-        & .package__btn {
+        & .package__link {
             background: #fff;
             color: #2b2e3f;
         }
@@ -64,6 +64,19 @@
             margin: 30px auto;
             background: #fff;
         }
+
+        & .package__content {
+            li {
+                color: #fff;
+
+                &::after {
+                    background-image: url('../images/check-white.svg');
+                }
+            }
+           
+        }
+
+
     }
 
     @include breakpoint($bp-991) {
@@ -122,8 +135,60 @@
     }
 }
 
-.package__link {
-    display: block;
+.package__content {
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(21, 20, 57, 0.4);
+    transition: max-height 0.5s linear, opacity 0.3s linear, visibility 0.3s linear, padding 0.3s linear;
+
+    &.active {
+        padding: 0 0 45px;
+        max-height: 700px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.package__list {
+    li {
+        list-style: disc;
+        list-style-position: inside;
+        margin-bottom: 9px;
+        padding-left: 30px;
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            background-image: url('../images/check-green.svg');
+            background-size: 100% 100%;
+            width: 15px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    li::marker {
+        content: "";
+    }
+}
+
+.package__btn {
+    display: inline-block;
+    padding: 0;
     margin-bottom: 44px;
 
     font-size: 18px;
@@ -131,6 +196,10 @@
     line-height: 24px;
     color: #3c3c3c;
     text-decoration: none;
+    text-align: center;
+
+    border: none;
+    background: none;
 
     transition: all .2s linear;
 
@@ -139,7 +208,7 @@
     }
 }
 
-.package__btn {
+.package__link {
     display: block;
     height: 54px;
     padding: 12px 8px;
